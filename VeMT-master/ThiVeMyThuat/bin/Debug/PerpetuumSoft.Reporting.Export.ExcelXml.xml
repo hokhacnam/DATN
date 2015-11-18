@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>~Soft.Reporting.Export.ExcelXML</name>
+  </assembly>
+  <members>
+    <member name="P:PerpetuumSoft.Reporting.Export.ExcelXml.CellStyle.TextColor"><summary>Gets and sets text color.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.CellStyle.#ctor(PerpetuumSoft.Framework.Drawing.FontDescriptor,System.Drawing.ContentAlignment,PerpetuumSoft.Framework.Drawing.Border,System.Int32,System.Drawing.Color,System.Drawing.Color)"><summary>Creates new instance of the CellStyle class.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlFile.EndPage(System.Double)"><summary>Ends current page.</summary></member>
+    <member name="T:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlExportFilter"><summary>Represents excel export filter.</summary></member>
+    <member name="T:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.TextControlExcelXmlAdapter"><summary>Represents adapter for text control.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlFile.CreateCellStyle(PerpetuumSoft.Framework.Drawing.FontDescriptor,System.Drawing.ContentAlignment,PerpetuumSoft.Framework.Drawing.Border,System.Int32,System.Drawing.Color,System.Drawing.Color)"><summary>Returns a new or existing instance of the CellStyle class with the given parameters.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.Cell.#ctor"><summary>Creates a new instance of Cell class.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlExportFilter.RegisterAdapter(System.Type,System.Type)"><summary>Registers new adapter type.</summary></member>
+    <member name="P:PerpetuumSoft.Reporting.Export.ExcelXml.Cell.MergeAcross"><summary>Gets and sets number of merged cells.</summary></member>
+    <member name="T:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.TextBoxExcelXmlAdapter"><summary>Represents adapter for the TextBox class.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.TextControlExcelXmlAdapter.GetText(PerpetuumSoft.Reporting.DOM.TextControl)"><summary>Returns text contained in the given control.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.AdvancedTextExcelXmlAdapter.GetText(PerpetuumSoft.Reporting.DOM.TextControl)"><summary>Overrided. See <see cref="M:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.TextControlExcelXmlAdapter.GetText(PerpetuumSoft.Reporting.DOM.TextControl)" />.</summary></member>
+    <member name="T:PerpetuumSoft.Reporting.Export.ExcelXml.CellStyle"><summary>Represent style of the excel cell.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlExportFilter.#ctor"><summary>Initializes a new instance of the PDFExportFilter class.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlFile.AddRect(System.Drawing.RectangleF)"><summary>Adds rectangle to the global matrix.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.AdvancedTextExcelXmlAdapter.#ctor"><summary>Creates a new instance of the AdvancedTextExcelXmlAdapter class.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlExportFilter.#ctor(System.ComponentModel.IContainer)"><summary>Initializes a new instance of the PDFExportFilter class with the specified container.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlExportFilterFactory.CreateFilter"><summary>Creates excel export filter instance.</summary></member>
+    <member name="P:PerpetuumSoft.Reporting.Export.ExcelXml.Cell.MergeDown"><summary>Gets and sets number of merged cells.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.ExcelXmlAdapter.Render(PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlFile,PerpetuumSoft.Reporting.DOM.ReportControl)"><summary>Converts ReportControl to excel cells.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.CellStyle.GetHashCode"><summary>Overrides default GetHashCode implementation.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.TextBoxExcelXmlAdapter.GetText(PerpetuumSoft.Reporting.DOM.TextControl)"><summary>Overrided. See <see cref="M:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.TextControlExcelXmlAdapter.GetText(PerpetuumSoft.Reporting.DOM.TextControl)" />.</summary></member>
+    <member name="P:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlFile.Item(System.Int32,System.Int32)"><summary>Gets cell with the specified indexes.</summary></member>
+    <member name="P:PerpetuumSoft.Reporting.Export.ExcelXml.CellStyle.Border"><summary>Gets and sets border.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlFile.Save(System.String)"><summary>Saves excel file to specified file.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlFile.GetRange(System.Drawing.RectangleF)"><summary>Returns cells range corresponded to the given rectangle.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.TextControlExcelXmlAdapter.#ctor"><summary>Creates a new instance of TextControlExcelXmlAdapter class.</summary></member>
+    <member name="T:PerpetuumSoft.Reporting.Export.ExcelXml.Cell"><summary>Represents excel cell.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.ReportControlExcelXmlAdapter.Render(PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlFile,PerpetuumSoft.Reporting.DOM.ReportControl)"><summary>Overridden. See <see cref="M:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.ExcelXmlAdapter.Render(PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlFile,PerpetuumSoft.Reporting.DOM.ReportControl)" />.</summary></member>
+    <member name="T:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlExportFilterFactory"><summary>Represents excel filter factory.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.ExcelXmlAdapter.#ctor"><summary>Creates new instance of ExcelXmlAdapter.</summary></member>
+    <member name="P:PerpetuumSoft.Reporting.Export.ExcelXml.CellStyle.Font"><summary>Gets and sets font.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlExportFilter.FindAdapter(System.Type)"><summary>Returns adapters type associated with the given control type.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.ReportControlExcelXmlAdapter.#ctor"><summary>Creates new instance of ReportControlExcelXmlAdapter.</summary></member>
+    <member name="P:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlExportFilterFactory.Factory"><summary>Gets the default instance of the ExcelXmlExportFilterFactory class.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlFile.EndMatrix"><summary>Closes global matrix.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.CellStyle.Equals(System.Object)"><summary>Overrides default Equals implementation.</summary></member>
+    <member name="P:PerpetuumSoft.Reporting.Export.ExcelXml.CellStyle.TextAlign"><summary>Gets and sets text aligment.</summary></member>
+    <member name="T:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.ReportControlExcelXmlAdapter"><summary>Represents adapter for ReportControl class.</summary></member>
+    <member name="T:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.AdvancedTextExcelXmlAdapter"><summary>Represents adapter for the AdvancedText control.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlExportFilter.GetFactory"><summary>Returns Excel filter factory.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlExportFilterFactory.GetFilterFormat"><summary>Returns filter format name.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlFile.Save(System.IO.Stream)"><summary>Saves excel file to stream.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlExportFilter.Export(PerpetuumSoft.Reporting.DOM.Document,System.IO.Stream)"><summary>Exports given document to the specified stream.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlFile.#ctor(System.String)"><summary>Creates new instance of the ExcelXmlFile.</summary></member>
+    <member name="T:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.ExcelXmlAdapter"><summary>Represents adapter class.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlExportFilterFactory.GetFilterFileExtension"><summary>Returns default file extension.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlExportFilter.ExportDocument(PerpetuumSoft.Reporting.DOM.Document,System.String)"><summary>Exports given document to specified file.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.TextControlExcelXmlAdapter.Render(PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlFile,PerpetuumSoft.Reporting.DOM.ReportControl)"><summary>Overridden. See <see cref="M:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.ExcelXmlAdapter.Render(PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlFile,PerpetuumSoft.Reporting.DOM.ReportControl)" />.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.Adapters.TextBoxExcelXmlAdapter.#ctor"><summary>Creates new instance of the TextBoxExcelXmlAdapter class.</summary></member>
+    <member name="T:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlFile"><summary>Represents excel file.</summary></member>
+    <member name="M:PerpetuumSoft.Reporting.Export.ExcelXml.ExcelXmlExportFilter.ExportDocument(PerpetuumSoft.Reporting.DOM.Document,System.IO.Stream)"><summary>Exports given document to the specified stream.</summary></member>
+    <member name="P:PerpetuumSoft.Reporting.Export.ExcelXml.Cell.Text"><summary>Gets and sets cell text.</summary></member>
+    <member name="P:PerpetuumSoft.Reporting.Export.ExcelXml.Cell.CellStyle"><summary>Gets and sets cell style.</summary></member>
+    <member name="P:PerpetuumSoft.Reporting.Export.ExcelXml.CellStyle.FillColor"><summary>Gets and sets fill color.</summary></member>
+    <member name="P:PerpetuumSoft.Reporting.Export.ExcelXml.CellStyle.Angle"><summary>Gets and sets angle.</summary></member>
+  </members>
+</doc>
