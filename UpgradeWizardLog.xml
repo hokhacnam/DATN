@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event action="Analyze" type="Success" name="Assembly References" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\ThiVeMyThuat.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\App.config" />
+  <event action="Analyze" type="Success" name="bieudo.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\bieudo.resx" />
+  <event action="Analyze" type="Success" name="Chiaphongthi.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\Chiaphongthi.resx" />
+  <event action="Analyze" type="Success" name="danhsachduthi.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\danhsachduthi.resx" />
+  <event action="Analyze" type="Success" name="Danhsachdutru.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\Danhsachdutru.resx" />
+  <event action="Analyze" type="Success" name="danhsachsbd.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\danhsachsbd.resx" />
+  <event action="Analyze" type="Success" name="DanhSBD.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\DanhSBD.resx" />
+  <event action="Analyze" type="Success" name="Frmdangky.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\Frmdangky.resx" />
+  <event action="Analyze" type="Success" name="FrmDonTuiDanhPhach.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\FrmDonTuiDanhPhach.resx" />
+  <event action="Analyze" type="Success" name="FrmDonTuiRand.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\FrmDonTuiRand.resx" />
+  <event action="Analyze" type="Success" name="FrmDsAnh.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\FrmDsAnh.resx" />
+  <event action="Analyze" type="Success" name="FrmDsDinhChinh.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\FrmDsDinhChinh.resx" />
+  <event action="Analyze" type="Success" name="FrmDsPhongThi.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\FrmDsPhongThi.resx" />
+  <event action="Analyze" type="Success" name="FrmDsThuLePhi.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\FrmDsThuLePhi.resx" />
+  <event action="Analyze" type="Success" name="FrmInHDDanhPhach.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\FrmInHDDanhPhach.resx" />
+  <event action="Analyze" type="Success" name="FrmInHDDonTuiBaiThi.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\FrmInHDDonTuiBaiThi.resx" />
+  <event action="Analyze" type="Success" name="FrmInTheDuThi.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\FrmInTheDuThi.resx" />
+  <event action="Analyze" type="Success" name="FrmInThongTinTuiPhach.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\FrmInThongTinTuiPhach.resx" />
+  <event action="Analyze" type="Success" name="FrmMain.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\FrmMain.resx" />
+  <event action="Analyze" type="Success" name="Importdiem.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\Importdiem.resx" />
+  <event action="Analyze" type="Success" name="Indanhsachphongthi.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\Indanhsachphongthi.resx" />
+  <event action="Analyze" type="Success" name="Ingiaybao.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\Ingiaybao.resx" />
+  <event action="Analyze" type="Success" name="Ketqua.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\Ketqua.resx" />
+  <event action="Analyze" type="Success" name="Ketquathi.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\Ketquathi.resx" />
+  <event action="Analyze" type="Success" name="phodiemthi.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\phodiemthi.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="Suathisinh.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\Suathisinh.resx" />
+  <event action="Analyze" type="Success" name="Themthisinh.resx" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\Themthisinh.resx" />
+  <event action="Analyze" type="Success" name="ThiVeMyThuat" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\ThiVeMyThuat.csproj" />
+  <event action="Analyze" type="Success" name="ThiVeMyThuat" path="F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat.sln" />
+</log>

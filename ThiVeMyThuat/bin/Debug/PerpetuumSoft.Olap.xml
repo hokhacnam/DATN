@@ -1,0 +1,1914 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>PerpetuumSoft.Olap</name>
+  </assembly>
+  <members>
+    <member name="T:PerpetuumSoft.Olap.AggregateFunctionFactory">
+      <summary>Represents basic class for all factories of aggregate functions.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Equals(System.Object)">
+      <summary>Overridden. See <see cref="M:System.Object.Equals(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.CreateFuntion">
+      <summary>Returns a newly created aggregate function.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.GetName">
+      <summary>Returns the aggregate function symbolic name.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.ToString">
+      <summary>Overridden. See <see cref="M:System.Object.ToString" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.AggregateFunctionFactory.CanGetPercent">
+      <summary>Gets the value which indicates whether the result may be represented as percentage. </summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.GetHashCode">
+      <summary>Overridden. See <see cref="M:System.Object.GetHashCode" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.AggregateFunctionFactory.Avg">
+      <summary>Average value.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.AggregateFunctionFactory.Avg.CanGetPercent">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Olap.AggregateFunctionFactory.CanGetPercent" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Avg.CreateFuntion">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.CreateFuntion" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Avg.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.AggregateFunctionFactory.Avg" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Avg.GetName">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.GetName" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.AggregateFunctionFactory.Count">
+      <summary>Count of values.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Count.CreateFuntion">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.CreateFuntion" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Count.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.AggregateFunctionFactory.Count" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Count.GetName">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.GetName" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.AggregateFunctionFactory.Count.CanGetPercent">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Olap.AggregateFunctionFactory.CanGetPercent" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.AggregateFunctionFactory.EstimateOfStandardDeviation">
+      <summary>Represents an aggregate function for estimate of the standard deviation calculation.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.EstimateOfStandardDeviation.CreateFuntion">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.CreateFuntion" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.AggregateFunctionFactory.EstimateOfStandardDeviation.CanGetPercent">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Olap.AggregateFunctionFactory.CanGetPercent" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.EstimateOfStandardDeviation.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.AggregateFunctionFactory.EstimateOfStandardDeviation" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.EstimateOfStandardDeviation.GetName">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.GetName" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.AggregateFunctionFactory.EstimateOfVariance">
+      <summary>Represents an aggregate function for calculation of the estimate of the variance.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.EstimateOfVariance.GetName">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.GetName" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.AggregateFunctionFactory.EstimateOfVariance.CanGetPercent">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Olap.AggregateFunctionFactory.CanGetPercent" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.EstimateOfVariance.CreateFuntion">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.CreateFuntion" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.EstimateOfVariance.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.AggregateFunctionFactory.EstimateOfVariance" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.AggregateFunctionFactory.Kurtosis">
+      <summary>Represents an aggregate function for kurtosis calculation.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Kurtosis.CreateFuntion">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.CreateFuntion" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.AggregateFunctionFactory.Kurtosis.CanGetPercent">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Olap.AggregateFunctionFactory.CanGetPercent" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Kurtosis.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.AggregateFunctionFactory.Kurtosis" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Kurtosis.GetName">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.GetName" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.AggregateFunctionFactory.Max">
+      <summary>Maximum value among all values.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Max.GetName">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.GetName" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Max.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.AggregateFunctionFactory.Max" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Max.CreateFuntion">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.CreateFuntion" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.AggregateFunctionFactory.Max.CanGetPercent">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Olap.AggregateFunctionFactory.CanGetPercent" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.AggregateFunctionFactory.Median">
+      <summary>Represents an aggregate function for median calculation.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.AggregateFunctionFactory.Median.CanGetPercent">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Olap.AggregateFunctionFactory.CanGetPercent" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Median.CreateFuntion">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.CreateFuntion" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Median.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.AggregateFunctionFactory.Median" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Median.GetName">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.GetName" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.AggregateFunctionFactory.Min">
+      <summary>Minimum value among all values.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Min.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.AggregateFunctionFactory.Min" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.AggregateFunctionFactory.Min.CanGetPercent">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Olap.AggregateFunctionFactory.CanGetPercent" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Min.CreateFuntion">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.CreateFuntion" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Min.GetName">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.GetName" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.AggregateFunctionFactory.Skewness">
+      <summary>Represents an aggregate function for skewness calculation.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Skewness.CreateFuntion">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.CreateFuntion" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Skewness.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.AggregateFunctionFactory.Skewness" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.AggregateFunctionFactory.Skewness.CanGetPercent">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Olap.AggregateFunctionFactory.CanGetPercent" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Skewness.GetName">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.GetName" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.AggregateFunctionFactory.StandardDeviation">
+      <summary>Represents an aggregate function for the standard deviation calculation.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.StandardDeviation.GetName">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.GetName" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.StandardDeviation.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.AggregateFunctionFactory.StandardDeviation" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.StandardDeviation.CreateFuntion">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.CreateFuntion" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.AggregateFunctionFactory.StandardDeviation.CanGetPercent">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Olap.AggregateFunctionFactory.CanGetPercent" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.AggregateFunctionFactory.Sum">
+      <summary>Sum of values.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.AggregateFunctionFactory.Sum.CanGetPercent">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Olap.AggregateFunctionFactory.CanGetPercent" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Sum.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.AggregateFunctionFactory.Sum" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Sum.GetName">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.GetName" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Sum.CreateFuntion">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.CreateFuntion" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.AggregateFunctionFactory.Variance">
+      <summary>Represents an aggregate function for variance calculation.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.AggregateFunctionFactory.Variance.CanGetPercent">
+      <summary>Overridden. See <see cref="P:PerpetuumSoft.Olap.AggregateFunctionFactory.CanGetPercent" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Variance.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.AggregateFunctionFactory.Variance" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Variance.GetName">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.GetName" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.AggregateFunctionFactory.Variance.CreateFuntion">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.AggregateFunctionFactory.CreateFuntion" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.CellBorder">
+      <summary>Represents the object used for cell border drawing. </summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.CellBorder.HorizontalLineColor">
+      <summary>Gets or sets the horisontal border line color.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.CellBorder.VerticalLineColor">
+      <summary>'Gets or sets the vertical border line color.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.CellBorder.#ctor(System.Drawing.Color,System.Drawing.Color)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.CellBorder" /> class with specific parameters. Parameters set colors for horizontal and vertical line.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.CellBorder.GetHashCode">
+      <exclude>Overridden. See <see cref="M:System.Object.GetHashCode" />.</exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.CellBorder.Black">
+      <summary>Gets the <see cref="T:PerpetuumSoft.Olap.CellBorder" /> object all lines of which are of black color.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.CellBorder.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.CellBorder" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.CellBorder.Equals(System.Object)">
+      <exclude>Overridden. See <see cref="M:System.Object.Equals(System.Object)" />.</exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.CellEventArgs">
+      <summary>Represents data for the <see cref="E:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.CellClick" /> event.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.CellEventArgs.#ctor(PerpetuumSoft.Olap.CellInfo)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.CellEventArgs" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.CellEventArgs.CellInfo">
+      <summary>Gets information on a pivot table cell.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.CellEventHandler">
+      <summary>Represents the method that will be called when a pivot table cell is clicked.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.CellInfo">
+      <summary>Represents information of a pivot table selected area.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.CellInfo.Column">
+      <summary>Gets the column position for a selected cell.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.CellInfo.XFieldItem">
+      <summary>Gets the <see cref="T:PerpetuumSoft.Olap.FieldItem" /> object that specifies an X dimension  field item for a selected sell.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.CellInfo.#ctor(PerpetuumSoft.Olap.FieldItem,PerpetuumSoft.Olap.FieldItem,PerpetuumSoft.Olap.Field,System.Int32,System.Int32)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.CellInfo" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.CellInfo.YFieldItem">
+      <summary>Gets <see cref="T:PerpetuumSoft.Olap.FieldItem" /> object that specifies an Y dimension field item for a selected sell.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.CellInfo.RowShift">
+      <summary>Gets the row shift for a selected cell.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.CellInfo.Field">
+      <summary>Gets the <see cref="T:PerpetuumSoft.Olap.Field" /> object that specifies a field for a selected sell.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.CellInfo.GetHashCode">
+      <summary>Overriden. See <see cref="M:System.Object.GetHashCode" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.CellInfo.ColumnShift">
+      <summary>Gets the column shift for a selected cell.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.CellInfo.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.CellInfo" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.CellInfo.Equals(System.Object)">
+      <summary>Overriden. See <see cref="M:System.Object.Equals(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.CellInfo.#ctor(PerpetuumSoft.Olap.FieldItem,PerpetuumSoft.Olap.FieldItem,PerpetuumSoft.Olap.Field,System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.CellInfo" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.CellInfo.Row">
+      <summary>Gets the row position for a selected cell.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.CellStyle">
+      <summary>Represents the object used for cell drawing.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.CellStyle.ContentAlignment">
+      <summary>Gets or sets text aligment type within a cell.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.CellStyle.ProgressBarColor">
+      <summary>Gets or sets cell text progress color.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.CellStyle.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.CellStyle" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.CellStyle.GradientBackColor">
+      <summary>Gets or sets cell text gradient background color.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.CellStyle.#ctor(System.Drawing.Color,System.Drawing.Color)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.CellStyle" /> class with specified back color and fore color.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.CellStyle.ForeColor">
+      <summary>Gets or sets cell text fore color.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.CellStyle.BackColor">
+      <summary>Gets or sets cell text background color.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.CellStyle.Font">
+      <summary>Gets or sets cell text font.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.CellStyle.GetStringWidth(System.Drawing.Graphics,System.String)">
+      <summary>Returns string width in pixels.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.CellStyle.Gradient">
+      <summary>Gets or sets the type of gradient fill for cell text.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.CellStyle.ShouldSerializeFont">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.ControlState">
+      <summary>Represents the control state.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Olap.ControlState.Normal">
+      <summary>Control is in normal state.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Olap.ControlState.Pressed">
+      <summary>Control is in pressed state.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Olap.ControlState.Hot">
+      <summary>Control is in hot state.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Data.ClientOlapEngine">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Data.DataCubeDataSourcePropetyDescriptor">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Data.IEngineSite">
+      <summary>Provides common interface for pivot table calculation clients.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Data.IEngineSite.ProgressStart">
+      <summary>Starts recalculation process.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Data.IEngineSite.ShowProgress(System.String)">
+      <summary>Refreshes a progress bar with specific text.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Data.IEngineSite.ProgressEnd">
+      <summary>Stops recalculation process.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Data.IEngineSite.Canceled">
+      <summary>Gets an indication that calculation process was interrupted.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Data.JointValue">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Data.JointValueCollection">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Data.OlapEngine">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Data.OlapExpressionSite">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Data.RecordItem">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Data.RecordWrapper">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Data.RecordWrapperCollection">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Data.SourceWrapper">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.DataCube">
+      <summary>Represents data for a pivot table.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.Save(System.IO.Stream,PerpetuumSoft.Olap.DataCubeSettings.UpdateMode)">
+      <summary>Saves the DataCube settings to stream with the indicated save mode assigned by the parameter.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.GetEnvironmentVariables">
+      <exclude>Implements <see cref="M:PerpetuumSoft.Framework.Expressions.Design.IExpressionDataService.GetEnvironmentVariables" />.</exclude>
+      <summary>Implements <see cref="M:PerpetuumSoft.Framework.Expressions.Design.IExpressionDataService.GetEnvironmentVariables" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.ExportToExcel(System.String)">
+      <summary>Writes a pivot table to a file in Excel document format.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.GetValueByCell(PerpetuumSoft.Olap.CellInfo)">
+      <summary>Returns value for a given pivot table cell.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCube.XDimensions">
+      <summary>Gets <see cref="T:PerpetuumSoft.Olap.FieldsCollection" /> that contains fields for building pivot table columns.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.ExportToHtml(System.String)">
+      <summary>Writes a pivot table to a file in HTML format.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.ExportToExcel(System.IO.Stream)">
+      <summary>Writes a pivot table to a stream in Excel document format.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.PrintPreview">
+      <summary>Shows the print preview dialog.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCube.Layout">
+      <summary>Gets or sets DataCube settings serialized to XML format.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.ExportToPdf(System.IO.Stream)">
+      <summary>Writes a pivot table to a stream in PDF document format.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.StartRecalculate(PerpetuumSoft.Olap.Data.IEngineSite)">
+      <summary>Starts pivot table calculation with specific parameter that represents progress site.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCube.InactiveFields">
+      <summary>Gets <see cref="T:PerpetuumSoft.Olap.FieldsCollection" /> that contains the fields not used for pivot table building.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.GetSourceRowsByCell(PerpetuumSoft.Olap.CellInfo)">
+      <summary>Returns <see cref="T:System.Collections.IList" /> that contains data source rows for a given pivot table cell.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.PrintPreview(PerpetuumSoft.Olap.DataCubePrintSettings)">
+      <summary>Shows the print preview dialog using the print settings assigned by the parameter.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.Save(System.String,PerpetuumSoft.Olap.DataCubeSettings.UpdateMode)">
+      <summary>Saves the DataCube settings to a file with indicated save mode assigned by the parameter.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCube.LastRecalculateTime">
+      <summary>Gets <see cref="T:System.TimeSpan" /> that represents the latest calculation time of a pivot table.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.RaiseDataCubeChanged">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.GetAccessibleFieldsNames">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.StartRecalculate">
+      <summary>Starts pivot table calculation.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.ExportToPdf(System.String)">
+      <summary>Writes a pivot table to a file in PDF document format.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCube.Caption">
+      <summary>Gets or sets a title for a pivot table.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCube.DataSource">
+      <summary>Gets or sets a data source for a pivot table.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCube.ShowSingleFact">
+      <summary>Gets or sets whether a single fact caption should be visible.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCube.JointFields">
+      <summary>Gets or sets <see cref="T:System.String[]" /></summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.GetDataSourceFields">
+      <exclude>Implements <see cref="M:PerpetuumSoft.Framework.Expressions.Design.IExpressionDataService.GetDataSourceFields" />.</exclude>
+      <summary>Implements <see cref="M:PerpetuumSoft.Framework.Expressions.Design.IExpressionDataService.GetDataSourceFields" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCube.StringRegKey">
+      <summary>Gets or sets license key for the current machine.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.Print(PerpetuumSoft.Olap.DataCubePrintSettings)">
+      <summary>Prints a pivot table using the print settings assigned by the parameter.</summary>
+    </member>
+    <member name="E:PerpetuumSoft.Olap.DataCube.PivotTableChanged">
+      <summary>Occurs when a pivot table is changed.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.Recalculate">
+      <summary>Recalculates a pivot table.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.GetCustomFuntions">
+      <exclude>Implements <see cref="M:PerpetuumSoft.Framework.Expressions.Design.IExpressionDataService.GetCustomFuntions" />.</exclude>
+      <summary>Implements <see cref="M:PerpetuumSoft.Framework.Expressions.Design.IExpressionDataService.GetCustomFuntions" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCube.Facts">
+      <summary>Gets <see cref="T:PerpetuumSoft.Olap.FieldsCollection" /> that contains fields for building pivot table facts.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.Load(System.IO.Stream)">
+      <summary>Loads data cube settings from a stream.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCube.StyleSheet">
+      <summary>Gets or sets the <see cref="T:PerpetuumSoft.Olap.StyleSheet" /> object representing visual styles for a pivot table.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.DataCube" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.Fill(PerpetuumSoft.Olap.ViewDimension,System.Data.DataSet,System.Int32)">
+      <summary>Implements pivot table roll-out into a DataSet by a specified dimension up to the given nesting level.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.Fill(PerpetuumSoft.Olap.ViewDimension,System.Data.DataTable[])">
+      <summary>Implements pivot table roll-out into array of tables.</summary>
+    </member>
+    <member name="E:PerpetuumSoft.Olap.DataCube.DataCubeChanged">
+      <summary>Occurs after Pivot table change.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.ExportToHtml(System.IO.Stream)">
+      <summary>Writes a pivot table to a stream in HTML format.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCube.YDimensions">
+      <summary>Gets <see cref="T:PerpetuumSoft.Olap.FieldsCollection" /> that contains fields for building pivot table rows.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.CancelRecalculate">
+      <summary>Stops pivot table calculation.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.GetPercentValueByCell(PerpetuumSoft.Olap.CellInfo)">
+      <summary>Returns percentage value for a given pivot table cell.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.Fill(PerpetuumSoft.Olap.ViewDimension,System.Data.DataSet,System.String[])">
+      <summary>Implements pivot table roll-out into a DataSet filling the tables specified by names.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.Load(System.String)">
+      <summary>Loads data cube settings from a file.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.System#IServiceProvider#GetService(System.Type)">
+      <exclude>Implements <see cref="M:System.IServiceProvider.GetService(System.Type)" />.</exclude>
+      <summary>Implements <see cref="M:System.IServiceProvider.GetService(System.Type)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCube.PivotTable">
+      <summary>Gets the <see cref="T:PerpetuumSoft.Olap.PivotTable" /> object representing a pivot table.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.ExportToPdf(System.String,PerpetuumSoft.Olap.Export.Pdf.PdfExportSettings)">
+      <summary>Writes a pivot table to a file in PDF document format with specific settings.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCube.ShowZeroValues">
+      <summary>Gets or sets whether zero values should be visible.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.GetDetailContext">
+      <exclude>Implements <see cref="M:PerpetuumSoft.Framework.Expressions.Design.IExpressionDataService.GetDetailContext" />.</exclude>
+      <summary>Implements <see cref="M:PerpetuumSoft.Framework.Expressions.Design.IExpressionDataService.GetDetailContext" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.Dispose(System.Boolean)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.ExportToPdf(System.IO.Stream,PerpetuumSoft.Olap.Export.Pdf.PdfExportSettings)">
+      <summary>Writes a pivot table to a stream in PDF document format with specific settings.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.Print">
+      <summary>Prints a pivot table.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.GetDetailEnvironment(System.String)">
+      <exclude>Implements <see cref="M:PerpetuumSoft.Framework.Expressions.Design.IExpressionDataService.GetDetailEnvironment(System.String)" />.</exclude>
+      <summary>Implements <see cref="M:PerpetuumSoft.Framework.Expressions.Design.IExpressionDataService.GetDetailEnvironment(System.String)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCube.Print(PerpetuumSoft.Olap.DataCubePrintDocument,System.Drawing.Printing.PrinterSettings,PerpetuumSoft.Olap.DataCubePrintSettings)">
+      <summary>Pivot table printing.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.DataCubeLayout">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.DataCubePrintDocument">
+      <summary>Represents a reusable pivot table that sends output to a printer.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubePrintDocument.PerpetuumSoft#Olap#IPivotTableBuilder#BuildFieldItem(PerpetuumSoft.Olap.PivotTableBuilderParameter,PerpetuumSoft.Olap.FieldItem,PerpetuumSoft.Olap.Shift)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubePrintDocument.PerpetuumSoft#Olap#IPivotTableBuilder#BuildEmptyFact(PerpetuumSoft.Olap.PivotTableBuilderParameter)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubePrintDocument.DataCube">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.DataCube" /> used as pivot table source.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubePrintDocument.OnBeginPrint(System.Drawing.Printing.PrintEventArgs)">
+      <summary>Raises the BeginPrint event. It is called after the Print method is called and before the first page of the document is printed.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubePrintDocument.OnPrintPage(System.Drawing.Printing.PrintPageEventArgs)">
+      <summary>Raises the PrintPage event. It is called before a page is printed.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubePrintDocument.PerpetuumSoft#Olap#IPivotTableBuilder#DrawCellHead(PerpetuumSoft.Olap.Export.HeadlineSettings,PerpetuumSoft.Olap.PivotTableBuilderParameter)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubePrintDocument.PerpetuumSoft#Olap#IPivotTableBuilder#BuildFieldCaption(PerpetuumSoft.Olap.PivotTableBuilderParameter)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubePrintDocument.PerpetuumSoft#Olap#IPivotTableBuilder#BuildCell(PerpetuumSoft.Olap.PivotTableBuilderParameter,System.String)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubePrintDocument.OnEndPrint(System.Drawing.Printing.PrintEventArgs)">
+      <summary>Raises the EndPrint event. It is called when the last page of the document has been printed.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubePrintDocument.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.DataCubePrintDocument" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubePrintDocument.PerpetuumSoft#Olap#IPivotTableBuilder#BuildFact(PerpetuumSoft.Olap.PivotTableBuilderParameter,System.Double)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubePrintDocument.PrintSettings">
+      <summary>Gets or sets the <see cref="T:PerpetuumSoft.Olap.DataCubePrintSettings" /> object representing the print settings.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubePrintDocument.Header">
+      <summary>Gets or sets pivot table header which is used during printing.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubePrintDocument.Footer">
+      <summary>Gets or sets pivot table footer which is used during printing.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubePrintDocument.PageHeader">
+      <summary>Gets or sets pivot table page header which is used during printing.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubePrintDocument.PageFooter">
+      <summary>Gets or sets pivot table page footer which is used during printing.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.DataCubePrintSettings">
+      <summary>Represents pivot table print settings.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubePrintSettings.TitleOnEveryPage">
+      <summary>Gets or sets the value indicating whether a pivot table title will be printed on every page.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubePrintSettings.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.DataCubePrintSettings" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubePrintSettings.FieldCaptionsOnEveryPage">
+      <summary>Gets or sets the value indicating whether field captions will be printed on every page.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubePrintSettings.DimensionsOnEveryPage">
+      <summary>Gets or sets the value indicating whether dimension cells will be printed on every page.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubePrintSettings.IgnoreColors">
+      <summary>Gets or sets the value indicating whether the multicolor style will be ignored.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.DataCubeRowView">
+      <summary>Represents view of a DataCube row or column. </summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeRowView.System#ComponentModel#ICustomTypeDescriptor#GetClassName">
+      <summary>Implements <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetClassName" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeRowView.System#ComponentModel#ICustomTypeDescriptor#GetEvents">
+      <summary>Implements <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetEvents" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeRowView.System#ComponentModel#ICustomTypeDescriptor#GetProperties">
+      <summary>Implements <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetProperties" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeRowView.#ctor(PerpetuumSoft.Olap.DataCubeView,PerpetuumSoft.Olap.FieldItem,PerpetuumSoft.Olap.FieldItem)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.DataCubeRowView" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeRowView.System#ComponentModel#ICustomTypeDescriptor#GetPropertyOwner(System.ComponentModel.PropertyDescriptor)">
+      <summary>Implements <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeRowView.GetFactValue(System.String)">
+      <summary>Returns the fact value given by the parameter.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeRowView.System#ComponentModel#ICustomTypeDescriptor#GetEditor(System.Type)">
+      <summary>Implements <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetEditor(System.Type)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeRowView.System#ComponentModel#ICustomTypeDescriptor#GetConverter">
+      <summary>Implements <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetConverter" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeRowView.System#ComponentModel#ICustomTypeDescriptor#GetDefaultEvent">
+      <summary>Implements <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeRowView.CreateChildView">
+      <summary>Creates child DataCubeView.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeRowView.Item">
+      <summary>Gets <see cref="T:PerpetuumSoft.Olap.FieldItem" /> this DataCubeRow corresponds to.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeRowView.System#ComponentModel#ICustomTypeDescriptor#GetEvents(System.Attribute[])">
+      <summary>Implements <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetEvents(System.Attribute[])" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeRowView.Caption">
+      <summary>Gets the Caption of <see cref="T:PerpetuumSoft.Olap.FieldItem" /> this DataRowView represents.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeRowView.System#ComponentModel#ICustomTypeDescriptor#GetComponentName">
+      <summary>Implements <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetComponentName" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeRowView.View">
+      <summary>Gets the <see cref="T:PerpetuumSoft.Olap.DataCubeView" /> this row belongs to.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeRowView.System#ComponentModel#ICustomTypeDescriptor#GetDefaultProperty">
+      <summary>Implements <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeRowView.System#ComponentModel#ICustomTypeDescriptor#GetProperties(System.Attribute[])">
+      <summary>Implements <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetProperties(System.Attribute[])" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeRowView.OrtogonalItem">
+      <summary>Gets the ortogonal item <see cref="T:PerpetuumSoft.Olap.FieldItem" /> for this DataCubeRowView.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeRowView.System#ComponentModel#ICustomTypeDescriptor#GetAttributes">
+      <summary>Implements <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetAttributes" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeRowView.ToString">
+      <summary>Overridden. See <see cref="M:System.Object.ToString" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.DataCubeSettings">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.DataCubeSettings+UpdateMode">
+	<exclude>
+		
+	</exclude>
+</member>
+    <member name="T:PerpetuumSoft.Olap.DataCubeView">
+      <summary>Represents a databindable view of a DataCube.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeView.Item(System.Int32)">
+      <summary>Implements <see cref="P:System.Collections.IList.Item(System.Int32)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeView.System#ComponentModel#IBindingList#IsSorted">
+      <summary>Implements <see cref="P:System.ComponentModel.IBindingList.IsSorted" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.Dispose(System.Boolean)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.System#ComponentModel#IBindingList#RemoveSort">
+      <summary>Implements <see cref="M:System.ComponentModel.IBindingList.RemoveSort" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.System#Collections#IList#RemoveAt(System.Int32)">
+      <summary>Implements <see cref="M:System.Collections.IList.RemoveAt(System.Int32)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.System#Collections#IList#IndexOf(System.Object)">
+      <summary>Implements <see cref="M:System.Collections.IList.IndexOf(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.RaiseListChanged">
+      <summary>Raises the ListChanged event.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeView.System#Collections#IList#IsReadOnly">
+      <summary>Implements <see cref="P:System.Collections.IList.IsReadOnly" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.GetItemProperties">
+      <summary>Returns PropertyDescriptorCollection for DataCubeView.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.System#Collections#ICollection#CopyTo(System.Array,System.Int32)">
+      <summary>Implements <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.System#ComponentModel#IBindingList#ApplySort(System.ComponentModel.PropertyDescriptor,System.ComponentModel.ListSortDirection)">
+      <summary>Implements <see cref="M:System.ComponentModel.IBindingList.ApplySort(System.ComponentModel.PropertyDescriptor,System.ComponentModel.ListSortDirection)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.#ctor(System.ComponentModel.IContainer)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.DataCubeView" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeView.System#Collections#ICollection#SyncRoot">
+      <summary>Implements <see cref="P:System.Collections.ICollection.SyncRoot" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeView.System#ComponentModel#IBindingList#AllowEdit">
+      <summary>Implements <see cref="P:System.ComponentModel.IBindingList.AllowEdit" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.System#ComponentModel#IBindingList#AddIndex(System.ComponentModel.PropertyDescriptor)">
+      <summary>Implements <see cref="M:System.ComponentModel.IBindingList.AddIndex(System.ComponentModel.PropertyDescriptor)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeView.System#Collections#IList#IsFixedSize">
+      <summary>Implements <see cref="P:System.Collections.IList.IsFixedSize" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeView.System#Collections#IList#Item(System.Int32)">
+      <summary>Implements <see cref="P:System.Collections.IList.Item(System.Int32)" />.</summary>
+    </member>
+    <member name="E:PerpetuumSoft.Olap.DataCubeView.ListChanged">
+      <summary>Occurs when the list managed by DataCubeView is changed.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeView.System#ComponentModel#IBindingList#SupportsSearching">
+      <summary>Implements <see cref="P:System.ComponentModel.IBindingList.SupportsSearching" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.DataCubeView" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.System#ComponentModel#IBindingList#RemoveIndex(System.ComponentModel.PropertyDescriptor)">
+      <summary>Implements <see cref="M:System.ComponentModel.IBindingList.RemoveIndex(System.ComponentModel.PropertyDescriptor)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeView.System#Collections#ICollection#IsSynchronized">
+      <summary>Implements <see cref="P:System.Collections.ICollection.IsSynchronized" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.System#ComponentModel#ITypedList#GetItemProperties(System.ComponentModel.PropertyDescriptor[])">
+      <summary>Implements <see cref="M:System.ComponentModel.ITypedList.GetItemProperties(System.ComponentModel.PropertyDescriptor[])" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.System#ComponentModel#IBindingList#AddNew">
+      <summary>Implements <see cref="M:System.ComponentModel.IBindingList.AddNew" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.GetOrtogonalItem">
+      <summary>Returns the ortogonal item for this DataCubeView.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeView.System#ComponentModel#IBindingList#SupportsSorting">
+      <summary>Implements <see cref="P:System.ComponentModel.IBindingList.SupportsSorting" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeView.PrimaryDimension">
+      <summary>Gets or sets the primary dimension for <see cref="T:PerpetuumSoft.Olap.ViewDimension" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.System#Collections#IList#Contains(System.Object)">
+      <summary>Implements <see cref="M:System.Collections.IList.Contains(System.Object)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeView.System#ComponentModel#IBindingList#SortDirection">
+      <summary>Implements <see cref="P:System.ComponentModel.IBindingList.SortDirection" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.GetRootItem">
+      <summary>Returns the root item of a PivotTable for the current DataCubeView PrimaryDimesion.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeView.DataCube">
+      <summary>Gets or sets  the <see cref="T:PerpetuumSoft.Olap.DataCube" /> source.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeView.System#ComponentModel#IBindingList#SupportsChangeNotification">
+      <summary>Implements <see cref="P:System.ComponentModel.IBindingList.SupportsChangeNotification" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeView.System#ComponentModel#IBindingList#SortProperty">
+      <summary>Implements <see cref="P:System.ComponentModel.IBindingList.SortProperty" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.System#Collections#IList#Remove(System.Object)">
+      <summary>Implements <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.System#Collections#IList#Insert(System.Int32,System.Object)">
+      <summary>Implements <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.Update">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeView.Count">
+      <summary>Implements <see cref="P:System.Collections.ICollection.Count" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeView.System#ComponentModel#IBindingList#AllowRemove">
+      <summary>Implements <see cref="P:System.ComponentModel.IBindingList.AllowRemove" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeView.System#ComponentModel#IBindingList#AllowNew">
+      <summary>Implements <see cref="P:System.ComponentModel.IBindingList.AllowNew" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.System#Collections#IEnumerable#GetEnumerator">
+      <summary>Implements <see cref="M:System.Collections.IEnumerable.GetEnumerator" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.System#Collections#IList#Add(System.Object)">
+      <summary>Implements <see cref="M:System.Collections.IList.Add(System.Object)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.System#Collections#IList#Clear">
+      <summary>Implements <see cref="M:System.Collections.IList.Clear" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.System#ComponentModel#ITypedList#GetListName(System.ComponentModel.PropertyDescriptor[])">
+      <summary>Implements <see cref="M:System.ComponentModel.ITypedList.GetListName(System.ComponentModel.PropertyDescriptor[])" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DataCubeView.System#ComponentModel#IBindingList#Find(System.ComponentModel.PropertyDescriptor,System.Object)">
+      <summary>Implements <see cref="M:System.ComponentModel.IBindingList.Find(System.ComponentModel.PropertyDescriptor,System.Object)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DataCubeView.Dimension">
+      <summary>Gets the current dimension <see cref="T:PerpetuumSoft.Olap.Field" /> for this DataCubeView.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Design.PainterEditor">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Direction">
+      <summary>Enumerates the directions.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Olap.Direction.BottomUp">
+      <summary>Bottom-up.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Olap.Direction.LeftToRight">
+      <summary>Left to right.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Olap.Direction.TopDown">
+      <summary>Top-down.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Olap.Direction.RightToLeft">
+      <summary>Right to left.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.DrawCellEventArgs">
+      <summary>Provides data for the DrawCell event.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DrawCellEventArgs.#ctor(PerpetuumSoft.Olap.CellInfo,PerpetuumSoft.Olap.CellStyle,System.Boolean)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.DrawCellEventArgs" /> class whith specific parameters.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DrawCellEventArgs.CellStyle">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.CellStyle" /> that supplies the style of a table cell drawn.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DrawCellEventArgs.#ctor(PerpetuumSoft.Olap.CellInfo,PerpetuumSoft.Olap.CellStyle)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.DrawCellEventArgs" /> class whith specific parameters.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DrawCellEventArgs.IsActiveCell">
+      <summary>Gets a value which indicates whether a cell is a selected table cell.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DrawCellEventArgs.CellInfo">
+      <summary>Gets <see cref="T:PerpetuumSoft.Olap.CellInfo" /> that supplies the information on a table sell drawn.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.DrawCellEventHandler">
+      <summary>Represents the method that will handle the <see cref="E:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.DrawCell} event of a {*T:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid}" /></summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.DrawGridItemEventArgs">
+      <summary>Provides data for the DrawGridItem event.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DrawGridItemEventArgs.Graphics">
+      <summary>Gets the graphics used to paint.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DrawGridItemEventArgs.Handled">
+      <summary>Gets or sets a value indicating whether the <see cref="E:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.DrawGridItem} event will be handled." /></summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DrawGridItemEventArgs.Bounds">
+      <summary>Gets <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the object drawn.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DrawGridItemEventArgs.CellStyle">
+      <summary>Gets <see cref="T:PerpetuumSoft.Olap.CellStyle" /> that supplies the style of a table cell drawn.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DrawGridItemEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellInfo,PerpetuumSoft.Olap.CellStyle,System.String)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.DrawGridItemEventArgs" /> class whith specific parameters.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.DrawGridItemEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellInfo,PerpetuumSoft.Olap.CellStyle)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.DrawGridItemEventArgs" /> class whith specific parameters.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DrawGridItemEventArgs.CellInfo">
+      <summary>Gets <see cref="T:PerpetuumSoft.Olap.CellInfo" /> that supplies the information on a table sell drawn.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.DrawGridItemEventArgs.Value">
+      <summary>Gets or sets a value for the object displayed.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.DrawGridItemEventHandler">
+      <summary>Represents the method that will handle the <see cref="E:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.DrawGridItem} event of a {*T:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid}" /></summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.EmptyFilter">
+      <summary>Represents an empty filter. </summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.EmptyFilter.Filter">
+      <summary>Gets a single empty filter. </summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.EmptyFilter.IsFiltered(System.Object,PerpetuumSoft.Framework.Expressions.IExpressionSite)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Olap.IFilter.IsFiltered(System.Object,PerpetuumSoft.Framework.Expressions.IExpressionSite)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.EmptyFilter.IsActive">
+      <summary>Implements <see cref="P:PerpetuumSoft.Olap.IFilter.IsActive" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Export.ExportDocumentEventArgs">
+      <summary>Represents information for the document export.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Export.ExportDocumentEventArgs.#ctor">	<summary>		Initializes a new instance of the		<see cref="T:PerpetuumSoft.Olap.Export.ExportDocumentEventArgs" />		 class.	</summary></member>
+    <member name="P:PerpetuumSoft.Olap.Export.ExportDocumentEventArgs.Header">
+      <summary>Gets or sets header which is used during export.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Export.ExportDocumentEventArgs.Footer">
+      <summary>Gets or sets footer which is used during export.</summary>
+    </member>
+    <member name="">
+</member>
+    <member name="T:PerpetuumSoft.Olap.Export.HeadlineSettings">
+      <summary>Represents the headline display settings.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Export.HeadlineSettings.AutoFormat">
+      <summary>Gets or sets the value which defines if text formatting should be used.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Export.HeadlineSettings.Text">
+      <summary>Gets or sets the headline text.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Export.HeadlineSettings.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.Export.HeadlineSettings" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Export.HeadlineSettings.Style">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.CellStyle" /> which sets the display style.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Export.HeadlineSettings.Height">
+      <summary>Gets or sets the headline height.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Export.Pdf.PdfExportSettings">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Export.Pdf.PdfExportSettingsDialog">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.FactTable">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Field">
+      <summary>Represents a pivot table field.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Field.ToString">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Field.ExpressionObject">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Field.Filter">
+      <summary>Gets or sets the <see cref="T:PerpetuumSoft.Olap.IFilter" /> object used for data filtering.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Field.Format">
+      <summary>Gets or sets string format used for field data printing.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Field.SortOrder">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.SortOrder" /> indicating the sort order.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Field.FieldType">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.FieldType" /> mode representing a way the given field can be used.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Field.Expression">
+      <summary>Gets or sets the expression for calculating data of a field.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Field.ShouldSerializeAggregate">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Field.TotalLabel">
+      <summary>Gets or sets the total value caption.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Field.DisplayExpression">
+      <summary>Gets or sets the expression for displaying data of the given field.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Field.ValueToString(System.Object,System.Boolean)">
+      <summary>Returns a fields value string notion.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Field.Caption">
+      <summary>Gets or sets field caption.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Field.Width">
+      <summary>Gets or sets field column width.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Field.Groups">
+      <summary>Gets custom field groups.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Field.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.Field" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Field.DisplayExpressionObject">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Field.#ctor(System.String,System.String)">
+      <summary>Initializes the new instance of the <see cref="T:PerpetuumSoft.Olap.Field" /> class  with specific parameters. The parameters indicate a caption and a field expression.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Field.ShowPercent">
+      <summary>Gets or sets the value that indicates whether the data will be displayed in percentage terms.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Field.Aggregate">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.AggregateTableFactory" /> object which creates an aggregate function.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Field.#ctor(System.String,System.String,PerpetuumSoft.Olap.SortOrder)">
+      <summary>Initializes the new instance of the <see cref="T:PerpetuumSoft.Olap.Field" /> class with specific parameters. The parameters indicate a caption, a field exspression and sort order.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Field.ShowProgress">
+      <summary>Gets or sets the value that indicates whether the data will be displayed as progess.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.FieldItem">
+      <summary>Represents a dimension item of a pivot table.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FieldItem.Index">
+      <summary>Gets or sets an index of a pivot table row or column.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldItem.GetTreeDepth">
+      <summary>Returns the depth of a tree which root is the given item.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FieldItem.ChildItems">
+      <summary>Gets <see cref="T:PerpetuumSoft.Olap.FieldItemCollection" /> containing child items.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FieldItem.Parent">
+      <summary>Gets a parent item for the given field item. </summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldItem.#ctor(System.Object,PerpetuumSoft.Olap.FieldItem)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.FieldItem" /> class with specific parameters. Parameters set Value and Parent properties.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FieldItem.DisplayValue">
+      <summary>Gets value for field item displaying. </summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldItem.#ctor(System.Object,System.Object,PerpetuumSoft.Olap.FieldItem)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.FieldItem" /> class with specific parameters. Parameters set Value,  DisplayValue and Parent properties.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FieldItem.Collapsed">
+      <summary>Gets or sets the value indicating whether child items will be displayed.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldItem.#ctor(System.Object,System.Object,System.Int32,PerpetuumSoft.Olap.FieldItem)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.FieldItem" /> class with specific parameters. Parameters set Value,  DisplayValue, Index and Parent properties.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FieldItem.IsTotal">
+      <summary>Gets the value indicating whether this item is a group total.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldItem.#ctor(System.Object)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.FieldItem" /> class with specific parameters. Parameters set the Value property.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldItem.#ctor(System.Object,System.Int32,PerpetuumSoft.Olap.FieldItem)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.FieldItem" /> class with specific parameters. Parameters set Value,  Index and Parent properties.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldItem.#ctor(System.Object,System.Int32)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.FieldItem" /> class with specific parameters. Parameters set Value and Index properties.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldItem.SetCollapsed(System.Boolean,System.Int32,System.Boolean)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FieldItem.Value">
+      <summary>Gets a field item value. </summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldItem.GetSheetCount">
+      <summary>Returns the number of "sheet" items for the given item.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.FieldItem.ErrorValue">
+      <summary>Represents data for an incorrect field item.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldItem.ErrorValue.#ctor(System.String)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.FieldItem.ErrorValue" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldItem.ErrorValue.ToString">
+      <exclude>Overridden. See <see cref="M:System.Object.ToString" />.</exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.FieldItem.NullValue">
+      <summary>Represents an indeterminate value for <see cref="T:PerpetuumSoft.Olap.FieldItem" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldItem.NullValue.ToString">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FieldItem.NullValue.Value">
+      <summary>Gets <see cref="T:PerpetuumSoft.Olap.FieldItem.NullValue" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.FieldItem.TotalValue">
+      <summary>Represents data for the total item.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldItem.TotalValue.#ctor(PerpetuumSoft.Olap.Field)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.FieldItem.TotalValue" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldItem.TotalValue.ToString">
+      <exclude>Overridden. See <see cref="M:System.Object.ToString" />.</exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.FieldItemCollection">
+      <summary>Represents a collection of <see cref="T:PerpetuumSoft.Olap.FieldItem" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FieldItemCollection.Count">
+      <summary>Implements <see cref="P:System.Collections.ICollection.Count" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FieldItemCollection.SyncRoot">
+      <exclude>Implements <see cref="P:System.Collections.ICollection.SyncRoot" />.</exclude>
+      <summary>Implements <see cref="P:System.Collections.ICollection.SyncRoot" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FieldItemCollection.Item(System.Int32)">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.FieldItem" /> at the specified index.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldItemCollection.GetEnumerator">
+      <summary>Implements <see cref="M:System.Collections.IEnumerable.GetEnumerator" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FieldItemCollection.Item(System.Object)">
+      <summary>Gets or sets the <see cref="T:PerpetuumSoft.Olap.FieldItem" /> item by the specified value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldItemCollection.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.FieldItemCollection" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldItemCollection.CopyTo(System.Array,System.Int32)">
+      <summary>Implements <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
+    </member>
+    <member name="E:PerpetuumSoft.Olap.FieldItemCollection.Changed">
+      <summary>Occurs when a collection is changed.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FieldItemCollection.IsSynchronized">
+      <exclude>Implements <see cref="P:System.Collections.ICollection.IsSynchronized" />.</exclude>
+      <summary>Implements <see cref="P:System.Collections.ICollection.IsSynchronized" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldItemCollection.Add(PerpetuumSoft.Olap.FieldItem)">
+      <summary>Adds <see cref="T:PerpetuumSoft.Olap.FieldItem" /> to the collection.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldItemCollection.Sort(System.Collections.IComparer)">
+      <summary>Sorts a collection by a given comparer.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FieldItemCollection.Item(System.Int32,System.Boolean)">
+      <summary>Gets or sets the <see cref="T:PerpetuumSoft.Olap.FieldItem" /> item by the specified index and method of beat.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.FieldsCollection">
+      <summary>Represents a collection of <see cref="T:PerpetuumSoft.Olap.Field" />.</summary>
+    </member>
+    <member name="E:PerpetuumSoft.Olap.FieldsCollection.CollectionChanged">
+      <summary>Occurs after collection change.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FieldsCollection.Item(System.Int32)">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.Field" /> at the specified index.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldsCollection.Insert(System.Int32,PerpetuumSoft.Olap.Field)">
+      <summary>Inserts <see cref="T:PerpetuumSoft.Olap.Field" /> into the collection at the specified index.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldsCollection.OnInsertComplete(System.Int32,System.Object)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldsCollection.AddRange(PerpetuumSoft.Olap.FieldsCollection)">
+      <summary>Adds a collection of <see cref="T:PerpetuumSoft.Olap.Field" /> to the collection.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldsCollection.Add(PerpetuumSoft.Olap.Field)">
+      <summary>Adds <see cref="T:PerpetuumSoft.Olap.Field" /> to the collection.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FieldsCollection.Item(System.String)">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.Field" /> at the specified index.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldsCollection.IndexOf(PerpetuumSoft.Olap.Field)">
+      <summary>Overloaded. Returns the zero-based index of the first <see cref="T:PerpetuumSoft.Olap.Field" /> occurrence in the collection or in its portion.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldsCollection.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.FieldsCollection" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldsCollection.Remove(PerpetuumSoft.Olap.Field)">
+      <summary>Removes the first <see cref="T:PerpetuumSoft.Olap.Field" /> occurrence  from the collection.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldsCollection.OnRemoveComplete(System.Int32,System.Object)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldsCollection.Contains(PerpetuumSoft.Olap.Field)">
+      <summary>Determines whether <see cref="T:PerpetuumSoft.Olap.Field" /> is in the collection.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FieldsCollection.AddRange(PerpetuumSoft.Olap.Field[])">
+      <summary>Adds the array of <see cref="T:PerpetuumSoft.Olap.Field" /> to the collection.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.FieldsCollection.CollectionChangeEventHandler">
+      <summary>Represents method that will handle CollectionChanged.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.FieldType">
+      <summary>Enumerates a field type.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Olap.FieldType.DimensionOnly">
+      <summary>Field is taken to dimensions type only.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Olap.FieldType.Both">
+      <summary>Field is taken to fact and dimension types.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Olap.FieldType.FactOnly">
+      <summary>Field is taken to facts type only.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.FilterByCondition">
+      <summary>Represents the filter by the expression assigned condition for field values.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FilterByCondition.Expression">
+      <summary>Gets an expression that strikes the filter.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FilterByCondition.IsActive">
+      <summary>Implements <see cref="P:PerpetuumSoft.Olap.IFilter.IsActive" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FilterByCondition.#ctor(System.String)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.FilterByCondition" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FilterByCondition.IsFiltered(System.Object,PerpetuumSoft.Framework.Expressions.IExpressionSite)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Olap.IFilter.IsFiltered(System.Object,PerpetuumSoft.Framework.Expressions.IExpressionSite)" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.FilterByValue">
+      <summary>Represents the filter for field values by one of its values.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FilterByValue.ExcludedValues">
+      <summary>Gets <see cref="T:System.Collections.Hashtable" /> containing the filtered value.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FilterByValue.IsFiltered(System.Object,PerpetuumSoft.Framework.Expressions.IExpressionSite)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Olap.IFilter.IsFiltered(System.Object,PerpetuumSoft.Framework.Expressions.IExpressionSite)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.FilterByValue.IsActive">
+      <summary>Implements <see cref="P:PerpetuumSoft.Olap.IFilter.IsActive" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FilterByValue.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.FilterByValue" /> class.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.FilterException">
+      <summary>Base class for all exceptions thrown from filters.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FilterException.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.FilterException" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FilterException.#ctor(System.String)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.FilterException" /> class with specific parameter. Parameter sets erкor message. </summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.FilterException.#ctor(System.String,System.Exception)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.FilterException" /> class with specific parameters. Parameters set error message and inner exception. </summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Gradient">
+      <summary>Enumerates the gradinet fill types.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Olap.Gradient.None">
+      <summary>Gradient fill is not used.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Olap.Gradient.Vertical">
+      <summary>Vertical gradient fill.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Olap.Gradient.Horizontal">
+      <summary>Horisontal gradient fill.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Grid">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Grid+Cell">
+	<exclude>
+		
+	</exclude>
+</member>
+    <member name="T:PerpetuumSoft.Olap.IAggregateFunction">
+      <summary>Represents an aggregate function.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.IAggregateFunction.GetResult">
+      <summary>Returns aggregation result.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.IAggregateFunction.AddValue(System.Double)">
+      <summary>Adds a value to aggregation result.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.IAggregateFunction.ValidResult">
+      <summary>Gets value indicating whether the GetResult function result is valid.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.IFilter">
+      <summary>Represents a data filter.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.IFilter.IsFiltered(System.Object,PerpetuumSoft.Framework.Expressions.IExpressionSite)">
+      <summary>Returns a value indicated whether the source record was filtered.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.IFilter.IsActive">
+      <summary>Returns the value indicating whether the filter is active.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.IPivotTableBuilder">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Licensing.OLAPLicenseProvider">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Licensing.OlapModelKitLicenseHolder">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.OlapExceptionBuilder">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Painter">
+      <summary>Represents the object for drawing a pivot table in graphics.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.DrawBorder(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellBorder)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.DrawMinus(System.Drawing.Graphics,System.Drawing.RectangleF,System.Drawing.Pen)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.DrawFact(System.Drawing.Graphics,System.Drawing.Rectangle,System.String,System.Double,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.DrawShiftButton(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.Direction)">
+      <summary>Draws the icon for the Shift button.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.DrawDropButton(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.ControlState,System.Boolean)">
+      <summary>Draws the icon for the Group down button.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.DrawSplitterLine(System.Drawing.Graphics,System.Drawing.Rectangle)">
+      <summary>Draws a splitter line.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.DrawTriangle(System.Drawing.Graphics,System.Drawing.RectangleF,PerpetuumSoft.Olap.SortOrder)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.GetTriangle(System.Single,System.Single)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.GetScaleRectangle(System.Drawing.RectangleF,System.Single)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.GetShiftRectangle(System.Drawing.Rectangle,System.Drawing.Point)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.GetScaleRectangle(System.Drawing.RectangleF,System.Drawing.PointF)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.DrawText(System.Drawing.Graphics,System.Drawing.RectangleF,System.String,PerpetuumSoft.Olap.CellStyle)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.DrawTextCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String)">
+      <summary>Draws a rectangle area with text.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.GetCenter(System.Drawing.RectangleF)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.DrawTextCell(System.Drawing.Graphics,System.Drawing.Rectangle,System.String,PerpetuumSoft.Olap.CellStyle)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.DrawTextCell(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.String,PerpetuumSoft.Olap.CellStyle)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.DrawCollapseButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Boolean)">
+      <summary>Draws the icon for the Collapse button.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.GetAngle(PerpetuumSoft.Olap.Direction)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.DrawTitle(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,System.String)">
+      <summary>Draws a title.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.DrawDimensionCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String,System.Drawing.Point)">
+      <summary>Draws a dimension cell.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.GetCaptionStringWidth(System.Drawing.Graphics,System.String)">
+      <summary>Returns the string width in pixels.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.DrawPlus(System.Drawing.Graphics,System.Drawing.RectangleF,System.Drawing.Pen)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.FillTriangle(System.Drawing.Graphics,System.Drawing.RectangleF,System.Drawing.Brush,PerpetuumSoft.Olap.Direction)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.DrawFieldCaption(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,PerpetuumSoft.Olap.ControlState,PerpetuumSoft.Olap.SortOrder,System.Boolean,System.String,System.Drawing.Size)">
+      <summary>Draws a field caption.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.DrawTriangle(System.Drawing.Graphics,System.Drawing.RectangleF,System.Drawing.Brush,PerpetuumSoft.Olap.Direction)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Painter.DrawProgressCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String,System.Double)">
+      <summary>Draws a progress bar cell.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.PivotTable">
+      <summary>Represents a pivot table.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.PivotTable.XRoot">
+      <summary>Gets <see cref="T:PerpetuumSoft.Olap.FieldItem" /> which is the root of X dimension.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.PivotTable.SortedColumn">
+      <summary>Gets a pivot table column number by which a pivot table was sorted.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.PivotTable.YRoot">
+      <summary>Gets <see cref="T:PerpetuumSoft.Olap.FieldItem" /> which is the root of Y dimension.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.PivotTable.IsValidFact(PerpetuumSoft.Olap.FieldItem,PerpetuumSoft.Olap.FieldItem,PerpetuumSoft.Olap.Field)">
+      <summary>Gets value indicating whether the fact defined by the given parameters has valid result.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.PivotTable.Error">
+      <summary>Gets or sets an object representing error. If a pivot table has been built correctly this property should be NULL.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.PivotTable.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.PivotTable" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.PivotTable.GetFactValue(PerpetuumSoft.Olap.FieldItem,PerpetuumSoft.Olap.FieldItem,PerpetuumSoft.Olap.Field)">
+      <summary>Returns the value from the facts table.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.PivotTable.Sort(PerpetuumSoft.Olap.Field,System.Int32)">
+      <summary>Sorts pivot table by a given fact and a column number.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.PivotTable.GetFactPercent(PerpetuumSoft.Olap.FieldItem,PerpetuumSoft.Olap.FieldItem,PerpetuumSoft.Olap.Field)">
+      <summary>Returns the value from the facts table in percentage terms.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.PivotTable.GetTable(PerpetuumSoft.Olap.Field)">
+      <summary>Returns the facts table by the given parameter. </summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.PivotTable.AddTable(PerpetuumSoft.Olap.Field,PerpetuumSoft.Olap.FactTable)">
+      <summary>Adds facts table. </summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.PivotTable.SortedFact">
+      <summary>Gets a fact by which a pivot table was sorted.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.PivotTableBuilderParameter">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Shift">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.SortOrder">
+      <summary>Enumerates the sort order.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Olap.SortOrder.Descending">
+      <summary>Descending sorting.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Olap.SortOrder.Ascending">
+      <summary>Ascending sotring.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.StyleSheet">
+      <summary>Represents a pivot table style sheet.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.StyleSheet.FieldCaptionStyle">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.CellStyle" /> for cells representing field caption.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.StyleSheet.YDimensionStyle">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.CellStyle" /> for Y dimension cells.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.StyleSheet.ActiveCellStyle">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.CellStyle" /> for active cells. </summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.StyleSheet.TotalStyle">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.CellStyle" /> for fact cells containing total by row or column.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.StyleSheet.MainTotalStyle">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.CellStyle" /> for fact cells containing the pivot table total.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.StyleSheet.ToString">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.StyleSheet.DimensionBorder">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.CellBorder" /> for cells of both dimensions.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.StyleSheet.FactBorder">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.CellBorder" /> for fact cells.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.StyleSheet.ShouldSerializeDimensionBorder">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.StyleSheet.GetStyles">
+      <summary>Returns the predefined style sheets.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.StyleSheet.XDimensionStyle">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.CellStyle" /> for X dimension cells. </summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.StyleSheet.TableCaptionStyle">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.CellStyle" /> for cells representing table caption.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.StyleSheet.Name">
+      <summary>Gets or sets a style sheet name.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.StyleSheet.EvenRowFactStyle">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.CellStyle" /> for fact cells included in even row.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.StyleSheet.GroupTotalStyle">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.CellStyle" /> for fact cells containing group total.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.StyleSheet.SmhouldSerializeFactBorder">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.StyleSheet.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.StyleSheet" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.StyleSheet.OddRowFactStyle">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.CellStyle" /> for fact cells included in odd row.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.ViewDimension">
+      <summary>Enumerates a dimension type.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Olap.ViewDimension.X">
+      <summary>Specifies an X dimension.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Olap.ViewDimension.Y">
+      <summary>Specifies a Y dimension.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Windows.Forms.CalculationMode">
+      <summary>Enumerates modes for pivot table calculation.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Olap.Windows.Forms.CalculationMode.Synchronous">
+      <summary>Synchronous mode.</summary>
+    </member>
+    <member name="F:PerpetuumSoft.Olap.Windows.Forms.CalculationMode.Asynchronous">
+      <summary>Asynchronous mode.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid">
+      <summary>Represents the grid for reviewing <see cref="T:PerpetuumSoft.Olap.DataCube" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.GetCellInfo(System.Int32,System.Int32)">
+      <summary>Returns information on a cell by a table column and a table row.</summary>
+    </member>
+    <member name="E:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.DrawCell">
+      <summary>Occurs at table lement drawing after the execution of <see cref="E:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.DrawGridItem}" /></summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.PerpetuumSoft#Olap#Data#IEngineSite#ProgressStart">
+      <summary>Implements <see cref="M:PerpetuumSoft.Olap.Data.IEngineSite.ProgressStart" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.PerpetuumSoft#Olap#Data#IEngineSite#ProgressEnd">
+      <summary>Implements <see cref="M:PerpetuumSoft.Olap.Data.IEngineSite.ProgressEnd" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.OnLoad(System.EventArgs)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.ShowRecalculate">
+      <summary>Gets and sets whether the Recalculate toolbutton will be visible.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.RefreshDataCubeGrid(System.Drawing.Rectangle)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.PerpetuumSoft#Olap#IPivotTableBuilder#BuildFieldItem(PerpetuumSoft.Olap.PivotTableBuilderParameter,PerpetuumSoft.Olap.FieldItem,PerpetuumSoft.Olap.Shift)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Olap.IPivotTableBuilder.BuildFieldItem(PerpetuumSoft.Olap.PivotTableBuilderParameter,PerpetuumSoft.Olap.FieldItem,PerpetuumSoft.Olap.Shift)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.AlignmentField(PerpetuumSoft.Olap.Field)">
+      <summary>Aligns a column according to the text width.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.ShowWizard">
+      <summary>Gets and sets whether the Wizard toolbutton will be visible.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.Print">
+      <summary>Shows the dialog for print.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.ShouldSerializePainter">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.Recalculate">
+      <summary>Recalculates a pivot table.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.AutoRecalculate">
+      <summary>Gets or sets value that indicates if a pivot table will be recalculated.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.ExportToExcel">
+      <summary>Shows the dialog for pivot table export to Excel.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.Save">
+      <summary>Shows the dialog for saving DataCube settings file.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.ExportToPdf">
+      <summary>Shows the PDF export settings dialog with the following pivot table export.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.ShowPrintSettingsDialog">
+      <summary>Shows the print settings dialog.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.PrintPreview">
+      <summary>Shows the dialog for print preview.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.ActiveCell">
+      <summary>Gets <see cref="T:PerpetuumSoft.Olap.CellInfo" /> which supplies the information on the selected pivot table cell.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.AlignmentFields">
+      <summary>Aligns all columns according to the text width.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.ShowPrintPreview">
+      <summary>Gets and sets whether the PrintPrview toolbutton will be visible.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.ShowWizardDialog">
+      <summary>Shows the DataCube wizard.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.PerpetuumSoft#Olap#IPivotTableBuilder#BuildEmptyFact(PerpetuumSoft.Olap.PivotTableBuilderParameter)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Olap.IPivotTableBuilder.BuildEmptyFact(PerpetuumSoft.Olap.PivotTableBuilderParameter)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.ShowOpen">
+      <summary>Gets and sets whether the Open toolbutton will be visible.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.ShowExportToExcel">
+      <summary>Gets and sets whether the ExportToExcel toolbutton will be visible.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.ShowAutoRecalculate">
+      <summary>Gets and sets whether the AutoRecalculate toolbutton will be visible.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.PerpetuumSoft#Olap#IPivotTableBuilder#BuildFieldCaption(PerpetuumSoft.Olap.PivotTableBuilderParameter)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Olap.IPivotTableBuilder.BuildFieldCaption(PerpetuumSoft.Olap.PivotTableBuilderParameter)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.Open">
+      <summary>Shows the dialog for opening DataCube settings file.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.ShowPrint">
+      <summary>Gets and sets whether the Print toolbutton will be visible.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.SetCollapsedAllItems(PerpetuumSoft.Olap.Field,System.Boolean)">
+      <summary>Sets the value assigned by the parameter to the Collapsed property for the indicated Field.</summary>
+    </member>
+    <member name="E:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.CellClick">
+      <summary>Occurs when a pivot table cell was clicked.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.ExportToHtml">
+      <summary>Shows the dialog for pivot table export to HTML format.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.GetCellInfo(System.Drawing.Point)">
+      <summary>Returns information on a cell by point.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.ShowPrintSettings">
+      <summary>Gets and sets whether the PrintSettings toolbutton will be visible.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.ShowExportToHtml">
+      <summary>Gets and sets whether the ExportToHtml toolbutton will be visible.</summary>
+    </member>
+    <member name="E:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.DrawGridItem">
+      <summary>Occurs when a table is being drawn.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.ShowExportToPdf">
+      <summary>Gets and sets whether the ExportToPDF toolbutton will be visible.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.PerpetuumSoft#Olap#IPivotTableBuilder#DrawCellHead(PerpetuumSoft.Olap.Export.HeadlineSettings,PerpetuumSoft.Olap.PivotTableBuilderParameter)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Olap.IPivotTableBuilder.DrawCellHead(PerpetuumSoft.Olap.Export.HeadlineSettings,PerpetuumSoft.Olap.PivotTableBuilderParameter)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.SetAllCollapsed(System.Boolean)">
+      <summary>Sets the value assigned by the parameter to the Collapsed property.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.CanSetCollapse(PerpetuumSoft.Olap.Field)">
+      <summary>Indicates the possibility of setting the Collapsed property.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.PerpetuumSoft#Olap#Data#IEngineSite#Canceled">
+      <summary>Implements <see cref="P:PerpetuumSoft.Olap.Data.IEngineSite.Canceled" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.OnSizeChanged(System.EventArgs)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.Painter">
+      <summary>Gets or sets the <see cref="T:PerpetuumSoft.Olap.Painter" /> object that is used to paint a pivot table.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.CalculationMode">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.Windows.Forms.CalculationMode" /> for pivot table calcaulation.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid" /> class.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.ShowSave">
+      <summary>Gets and sets whether the Save toolbutton will be visible.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.Dispose(System.Boolean)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.Source">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.DataCube" /> for review.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.PerpetuumSoft#Olap#IPivotTableBuilder#BuildCell(PerpetuumSoft.Olap.PivotTableBuilderParameter,System.String)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Olap.IPivotTableBuilder.BuildCell(PerpetuumSoft.Olap.PivotTableBuilderParameter,System.String)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.CanAlignmentField(PerpetuumSoft.Olap.Field)">
+      <summary>Indicates the possibility of changing field Aligment.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.PerpetuumSoft#Olap#Data#IEngineSite#ShowProgress(System.String)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Olap.Data.IEngineSite.ShowProgress(System.String)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.RefreshDataCubeGrid">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.About">
+      <exclude>Gets <see cref="T:System.String" /></exclude>
+      <summary>Gets <see cref="T:System.String" /></summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.ShowToolBar">
+      <summary>Gets and sets whether the ToolBar will be visible.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.DataCubeGrid.PerpetuumSoft#Olap#IPivotTableBuilder#BuildFact(PerpetuumSoft.Olap.PivotTableBuilderParameter,System.Double)">
+      <summary>Implements <see cref="M:PerpetuumSoft.Olap.IPivotTableBuilder.BuildFact(PerpetuumSoft.Olap.PivotTableBuilderParameter,System.Double)" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Windows.Forms.DataCubeWizard">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Windows.Forms.Design.TextEditorForm">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Windows.Forms.GroupDialog">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Windows.Forms.OfficePainter">
+      <summary>Represents the object used for drawing a pivot table in office style.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.OfficePainter.DrawShiftButton(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.Direction)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawShiftButton(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.Direction)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.OfficePainter.DrawProgressCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String,System.Double)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawProgressCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String,System.Double)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.OfficePainter.DrawCollapseButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Boolean)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawCollapseButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Boolean)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.OfficePainter.DrawDropButton(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.ControlState,System.Boolean)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawDropButton(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.ControlState,System.Boolean)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.OfficePainter.DrawFieldCaption(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,PerpetuumSoft.Olap.ControlState,PerpetuumSoft.Olap.SortOrder,System.Boolean,System.String,System.Drawing.Size)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawFieldCaption(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,PerpetuumSoft.Olap.ControlState,PerpetuumSoft.Olap.SortOrder,System.Boolean,System.String,System.Drawing.Size)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.OfficePainter.ToString">
+      <summary>Overridden. See <see cref="M:System.Object.ToString" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.OfficePainter.DrawDimensionCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String,System.Drawing.Point)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawDimensionCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String,System.Drawing.Point)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.OfficePainter.DrawTextCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawTextCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.OfficePainter.DrawSplitterLine(System.Drawing.Graphics,System.Drawing.Rectangle)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawSplitterLine(System.Drawing.Graphics,System.Drawing.Rectangle)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.OfficePainter.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.Windows.Forms.OfficePainter" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.OfficePainter.DrawTitle(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,System.String)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawTitle(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,System.String)" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Windows.Forms.PrintSettingsDialog">
+      <summary>Print settings dialog</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.PrintSettingsDialog.PrintSettings">
+      <summary>Gets or sets <see cref="T:PerpetuumSoft.Olap.DataCubePrintSettings" /></summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.PrintSettingsDialog.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.Windows.Forms.PrintSettingsDialog" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.PrintSettingsDialog.Dispose(System.Boolean)">
+      <exclude>
+      </exclude>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Windows.Forms.ProfessionalPainter">
+      <summary>Represents the object for drawing a pivot table in graphics.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.ProfessionalPainter.BackgroundColor">
+      <summary>Gets or sets <see cref="T:System.Drawing.Color" /></summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.ProfessionalPainter.DrawFieldCaption(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,PerpetuumSoft.Olap.ControlState,PerpetuumSoft.Olap.SortOrder,System.Boolean,System.String,System.Drawing.Size)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawFieldCaption(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,PerpetuumSoft.Olap.ControlState,PerpetuumSoft.Olap.SortOrder,System.Boolean,System.String,System.Drawing.Size)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.ProfessionalPainter.BorderColor">
+      <summary>Gets or sets <see cref="T:System.Drawing.Color" /></summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.ProfessionalPainter.DrawSplitterLine(System.Drawing.Graphics,System.Drawing.Rectangle)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawSplitterLine(System.Drawing.Graphics,System.Drawing.Rectangle)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.ProfessionalPainter.DrawTitle(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,System.String)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawTitle(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,System.String)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.ProfessionalPainter.#ctor(System.Drawing.Color,System.Drawing.Color)">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.Windows.Forms.ProfessionalPainter" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.ProfessionalPainter.ToString">
+      <summary>Overridden. See <see cref="M:System.Object.ToString" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.ProfessionalPainter.DrawCollapseButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Boolean)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawCollapseButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Boolean)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.ProfessionalPainter.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.Windows.Forms.ProfessionalPainter" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.ProfessionalPainter.DrawDimensionCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String,System.Drawing.Point)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawDimensionCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String,System.Drawing.Point)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.ProfessionalPainter.DrawProgressCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String,System.Double)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawProgressCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String,System.Double)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.ProfessionalPainter.DrawShiftButton(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.Direction)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawShiftButton(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.Direction)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.ProfessionalPainter.DrawTextCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawTextCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.ProfessionalPainter.DrawDropButton(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.ControlState,System.Boolean)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawDropButton(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.ControlState,System.Boolean)" />.</summary>
+    </member>
+    <member name="P:PerpetuumSoft.Olap.Windows.Forms.ProfessionalPainter.HighlightColor">
+      <summary>Gets or sets <see cref="T:System.Drawing.Color" /></summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Windows.Forms.SmoothPainter">
+      <summary>Represents the object used for pivot table drawing in smooth style.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.SmoothPainter.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.Windows.Forms.SmoothPainter" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.SmoothPainter.DrawTextCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawTextCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.SmoothPainter.ToString">
+      <summary>Overridden. See <see cref="M:System.Object.ToString" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.SmoothPainter.DrawDimensionCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String,System.Drawing.Point)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawDimensionCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String,System.Drawing.Point)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.SmoothPainter.DrawShiftButton(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.Direction)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawShiftButton(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.Direction)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.SmoothPainter.DrawFieldCaption(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,PerpetuumSoft.Olap.ControlState,PerpetuumSoft.Olap.SortOrder,System.Boolean,System.String,System.Drawing.Size)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawFieldCaption(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,PerpetuumSoft.Olap.ControlState,PerpetuumSoft.Olap.SortOrder,System.Boolean,System.String,System.Drawing.Size)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.SmoothPainter.DrawSplitterLine(System.Drawing.Graphics,System.Drawing.Rectangle)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawSplitterLine(System.Drawing.Graphics,System.Drawing.Rectangle)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.SmoothPainter.DrawDropButton(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.ControlState,System.Boolean)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawDropButton(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.ControlState,System.Boolean)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.SmoothPainter.DrawCollapseButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Boolean)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawCollapseButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Boolean)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.SmoothPainter.DrawProgressCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String,System.Double)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawProgressCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String,System.Double)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.SmoothPainter.DrawTitle(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,System.String)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawTitle(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,System.String)" />.</summary>
+    </member>
+    <member name="T:PerpetuumSoft.Olap.Windows.Forms.XPPainter">
+      <summary>Represents the object used for drawing a pivot table in XP style.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.XPPainter.DrawTitle(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,System.String)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawTitle(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,System.String)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.XPPainter.DrawDropButton(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.ControlState,System.Boolean)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawDropButton(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.ControlState,System.Boolean)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.XPPainter.ToString">
+      <summary>Overridden. See <see cref="M:System.Object.ToString" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.XPPainter.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:PerpetuumSoft.Olap.Windows.Forms.XPPainter" /> class.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.XPPainter.DrawShiftButton(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.Direction)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawShiftButton(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.Direction)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.XPPainter.DrawTextCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawTextCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.XPPainter.DrawCollapseButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Boolean)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawCollapseButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Boolean)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.XPPainter.DrawDimensionCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String,System.Drawing.Point)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawDimensionCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String,System.Drawing.Point)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.XPPainter.DrawProgressCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String,System.Double)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawProgressCell(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,System.String,System.Double)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.XPPainter.DrawSplitterLine(System.Drawing.Graphics,System.Drawing.Rectangle)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawSplitterLine(System.Drawing.Graphics,System.Drawing.Rectangle)" />.</summary>
+    </member>
+    <member name="M:PerpetuumSoft.Olap.Windows.Forms.XPPainter.DrawFieldCaption(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,PerpetuumSoft.Olap.ControlState,PerpetuumSoft.Olap.SortOrder,System.Boolean,System.String,System.Drawing.Size)">
+      <summary>Overridden. See <see cref="M:PerpetuumSoft.Olap.Painter.DrawFieldCaption(System.Drawing.Graphics,System.Drawing.Rectangle,PerpetuumSoft.Olap.CellStyle,PerpetuumSoft.Olap.CellBorder,PerpetuumSoft.Olap.ControlState,PerpetuumSoft.Olap.SortOrder,System.Boolean,System.String,System.Drawing.Size)" />.</summary>
+    </member>
+  </members>
+</doc>

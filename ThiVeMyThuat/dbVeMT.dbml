@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="XDA" Class="dbVeMTDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=KHACNAM;Initial Catalog=XDA;Integrated Security=True" SettingsObjectName="ThiVeMyThuat.Properties.Settings" SettingsPropertyName="XDAConnectionString3" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.vemt" Member="vemts">
+    <Type Name="vemt">
+      <Column Name="sohs" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="hoten" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="phai" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="gt" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ngaysinh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="namtn" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="sobaodanh" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="phongthi" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="ghichu" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="diem" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="hktt" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="huyenhktt" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="noisinh" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="cmnd" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ngcapcmt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="noicap" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="lephi" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="tui" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="phach" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="stt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="stttui" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="phonecodinh" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.nhanvien" Member="nhanviens">
+    <Type Name="nhanvien">
+      <Column Name="username" Type="System.String" DbType="NVarChar(25) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="pass" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.layTen" Method="layTen" IsComposable="true">
+    <Parameter Name="Hoten" Parameter="hoten" Type="System.String" DbType="NVarChar(25)" />
+    <Return Type="System.String" />
+  </Function>
+</Database>

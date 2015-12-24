@@ -1,0 +1,4 @@
+Máy chủ : (local)
+Cơ sở dữ liệu : XDA
+Người dùng : sa
+Mật khẩu : 123456
