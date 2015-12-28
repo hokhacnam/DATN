@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ThiVeMyThuat
 {
-    public partial class Frmdangky : Form
+    public partial class FrmDangKy : Form
     {
-        public Frmdangky()
+        public FrmDangKy()
         {
             InitializeComponent();
         }
@@ -115,14 +115,14 @@ namespace ThiVeMyThuat
         private void btnthem_Click(object sender, EventArgs e)
         {
             String sohs = dgv_thisinh.CurrentRow.Cells[0].ToString();
-            Themthisinh them = new Themthisinh(sohs);
+            ThemThiSinh them = new ThemThiSinh(sohs);
             them.DataAvailable += new EventHandler(child_DataAvaiable);
             them.Show();
         }
 
         private void child_DataAvaiable(object sender, EventArgs e)
         {
-            Suathisinh s = sender as Suathisinh;
+            SuaThiSinh s = sender as SuaThiSinh;
             if (s != null)
             {
                 foreach (DataGridViewRow item in dgv_thisinh.Rows)
@@ -297,7 +297,7 @@ namespace ThiVeMyThuat
             //Suathisinh up = new Suathisinh(masv);
             //up.DataAvailable += new EventHandler(child_DataAvaiable);
             //up.Show();
-            Suathisinh sua = new Suathisinh();
+            SuaThiSinh sua = new SuaThiSinh();
             sua.sohs = dgv_thisinh.CurrentRow.Cells[0].Value.ToString();
             sua.hoten = dgv_thisinh.CurrentRow.Cells[1].Value.ToString();
             sua.gioitinh = dgv_thisinh.CurrentRow.Cells[2].Value.ToString();
@@ -391,7 +391,7 @@ namespace ThiVeMyThuat
 
         private void btndanhsach_Click(object sender, EventArgs e)
         {
-            Danhsachdutru ds = new Danhsachdutru ();
+            DanhSachDuTru ds = new DanhSachDuTru ();
             ds.Show();
         }
 
@@ -425,7 +425,7 @@ namespace ThiVeMyThuat
 
         private void dgv_thisinh_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            Suathisinh sua = new Suathisinh();
+            SuaThiSinh sua = new SuaThiSinh();
             sua.sohs = dgv_thisinh.CurrentRow.Cells[0].Value.ToString();
             sua.hoten = dgv_thisinh.CurrentRow.Cells[1].Value.ToString();
             sua.gioitinh = dgv_thisinh.CurrentRow.Cells[2].Value.ToString();

@@ -104,35 +104,35 @@
       <DependentUpon>Chiaphongthi.cs</DependentUpon>
     </Compile>
     <Compile Include="Constants.cs" />
-    <Compile Include="Dangnhap.cs">
+    <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dangnhap.Designer.cs">
-      <DependentUpon>Dangnhap.cs</DependentUpon>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dangnhapserver.cs">
+    <Compile Include="DangNhapServer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dangnhapserver.Designer.cs">
-      <DependentUpon>Dangnhapserver.cs</DependentUpon>
+    <Compile Include="DangNhapServer.Designer.cs">
+      <DependentUpon>DangNhapServer.cs</DependentUpon>
     </Compile>
-    <Compile Include="danhsachduthi.cs">
+    <Compile Include="DanhSachDuThi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="danhsachduthi.Designer.cs">
-      <DependentUpon>danhsachduthi.cs</DependentUpon>
+    <Compile Include="DanhSachDuThi.Designer.cs">
+      <DependentUpon>DanhSachDuThi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Danhsachdutru.cs">
+    <Compile Include="DanhSachDuTru.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Danhsachdutru.Designer.cs">
-      <DependentUpon>Danhsachdutru.cs</DependentUpon>
+    <Compile Include="DanhSachDuTru.Designer.cs">
+      <DependentUpon>DanhSachDuTru.cs</DependentUpon>
     </Compile>
-    <Compile Include="danhsachsbd.cs">
+    <Compile Include="DanhSachSBD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="danhsachsbd.Designer.cs">
-      <DependentUpon>danhsachsbd.cs</DependentUpon>
+    <Compile Include="DanhSachSBD.Designer.cs">
+      <DependentUpon>DanhSachSBD.cs</DependentUpon>
     </Compile>
     <Compile Include="DanhSBD.cs">
       <SubType>Form</SubType>
@@ -145,11 +145,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbVeMT.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Frmdangky.cs">
+    <Compile Include="FrmDangKy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frmdangky.Designer.cs">
-      <DependentUpon>Frmdangky.cs</DependentUpon>
+    <Compile Include="FrmDangKy.Designer.cs">
+      <DependentUpon>FrmDangKy.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmInHDDanhPhach.cs">
       <SubType>Form</SubType>
@@ -226,108 +226,118 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Importdiem.cs">
+    <Compile Include="ImPortDiem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Importdiem.Designer.cs">
-      <DependentUpon>Importdiem.cs</DependentUpon>
+    <Compile Include="ImPortDiem.Designer.cs">
+      <DependentUpon>ImPortDiem.cs</DependentUpon>
     </Compile>
-    <Compile Include="Indanhsachphongthi.cs">
+    <Compile Include="InDanhSachPhongThi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Indanhsachphongthi.Designer.cs">
-      <DependentUpon>Indanhsachphongthi.cs</DependentUpon>
+    <Compile Include="InDanhSachPhongThi.Designer.cs">
+      <DependentUpon>InDanhSachPhongThi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ingiaybao.cs">
+    <Compile Include="InGiayBao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ingiaybao.Designer.cs">
-      <DependentUpon>Ingiaybao.cs</DependentUpon>
+    <Compile Include="InGiayBao.Designer.cs">
+      <DependentUpon>InGiayBao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ketqua.cs">
+    <Compile Include="KetQua.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ketqua.Designer.cs">
-      <DependentUpon>Ketqua.cs</DependentUpon>
+    <Compile Include="KetQua.Designer.cs">
+      <DependentUpon>KetQua.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ketquathi.cs">
+    <Compile Include="KetQuaThi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ketquathi.Designer.cs">
-      <DependentUpon>Ketquathi.cs</DependentUpon>
+    <Compile Include="KetQuaThi.Designer.cs">
+      <DependentUpon>KetQuaThi.cs</DependentUpon>
     </Compile>
-    <Compile Include="phodiemthi.cs">
+    <Compile Include="MaHoaMD5.cs" />
+    <Compile Include="PhoDiemThi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="phodiemthi.Designer.cs">
-      <DependentUpon>phodiemthi.cs</DependentUpon>
+    <Compile Include="PhoDiemThi.Designer.cs">
+      <DependentUpon>PhoDiemThi.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RadChart.cs" />
-    <Compile Include="Suathisinh.cs">
+    <Compile Include="SuaThiSinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Suathisinh.Designer.cs">
-      <DependentUpon>Suathisinh.cs</DependentUpon>
+    <Compile Include="SuaThiSinh.Designer.cs">
+      <DependentUpon>SuaThiSinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="Themthisinh.cs">
+    <Compile Include="TaoTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Themthisinh.Designer.cs">
-      <DependentUpon>Themthisinh.cs</DependentUpon>
+    <Compile Include="TaoTaiKhoan.Designer.cs">
+      <DependentUpon>TaoTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemThiSinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemThiSinh.Designer.cs">
+      <DependentUpon>ThemThiSinh.cs</DependentUpon>
     </Compile>
     <Compile Include="Utils.cs" />
     <EmbeddedResource Include="Chiaphongthi.resx">
       <DependentUpon>Chiaphongthi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dangnhap.resx">
-      <DependentUpon>Dangnhap.cs</DependentUpon>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dangnhapserver.resx">
-      <DependentUpon>Dangnhapserver.cs</DependentUpon>
+    <EmbeddedResource Include="DangNhapServer.resx">
+      <DependentUpon>DangNhapServer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="danhsachduthi.resx">
-      <DependentUpon>danhsachduthi.cs</DependentUpon>
+    <EmbeddedResource Include="DanhSachDuThi.resx">
+      <DependentUpon>DanhSachDuThi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Danhsachdutru.resx">
-      <DependentUpon>Danhsachdutru.cs</DependentUpon>
+    <EmbeddedResource Include="DanhSachDuTru.resx">
+      <DependentUpon>DanhSachDuTru.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="danhsachsbd.resx">
-      <DependentUpon>danhsachsbd.cs</DependentUpon>
+    <EmbeddedResource Include="DanhSachSBD.resx">
+      <DependentUpon>DanhSachSBD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DanhSBD.resx">
       <DependentUpon>DanhSBD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Importdiem.resx">
-      <DependentUpon>Importdiem.cs</DependentUpon>
+    <EmbeddedResource Include="ImPortDiem.resx">
+      <DependentUpon>ImPortDiem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Indanhsachphongthi.resx">
-      <DependentUpon>Indanhsachphongthi.cs</DependentUpon>
+    <EmbeddedResource Include="InDanhSachPhongThi.resx">
+      <DependentUpon>InDanhSachPhongThi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ingiaybao.resx">
-      <DependentUpon>Ingiaybao.cs</DependentUpon>
+    <EmbeddedResource Include="InGiayBao.resx">
+      <DependentUpon>InGiayBao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ketqua.resx">
-      <DependentUpon>Ketqua.cs</DependentUpon>
+    <EmbeddedResource Include="KetQua.resx">
+      <DependentUpon>KetQua.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ketquathi.resx">
-      <DependentUpon>Ketquathi.cs</DependentUpon>
+    <EmbeddedResource Include="KetQuaThi.resx">
+      <DependentUpon>KetQuaThi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="phodiemthi.resx">
-      <DependentUpon>phodiemthi.cs</DependentUpon>
+    <EmbeddedResource Include="PhoDiemThi.resx">
+      <DependentUpon>PhoDiemThi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Suathisinh.resx">
-      <DependentUpon>Suathisinh.cs</DependentUpon>
+    <EmbeddedResource Include="SuaThiSinh.resx">
+      <DependentUpon>SuaThiSinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Themthisinh.resx">
-      <DependentUpon>Themthisinh.cs</DependentUpon>
+    <EmbeddedResource Include="TaoTaiKhoan.resx">
+      <DependentUpon>TaoTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemThiSinh.resx">
+      <DependentUpon>ThemThiSinh.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="dbVeMT.dbml.layout">
       <DependentUpon>dbVeMT.dbml</DependentUpon>
     </None>
-    <EmbeddedResource Include="Frmdangky.resx">
-      <DependentUpon>Frmdangky.cs</DependentUpon>
+    <EmbeddedResource Include="FrmDangKy.resx">
+      <DependentUpon>FrmDangKy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInHDDanhPhach.resx">
       <DependentUpon>FrmInHDDanhPhach.cs</DependentUpon>
@@ -428,6 +438,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1450392558_save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taikhoan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\matkhau.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caidat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thoat.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

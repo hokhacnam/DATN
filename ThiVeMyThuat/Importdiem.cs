@@ -11,9 +11,9 @@ using System.Data.OleDb;
 
 namespace ThiVeMyThuat
 {
-    public partial class Importdiem : Form
+    public partial class ImPortDiem : Form
     {
-        public Importdiem()
+        public ImPortDiem()
         {
             InitializeComponent();
         }
@@ -113,7 +113,7 @@ namespace ThiVeMyThuat
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Ketqua f = new Ketqua();
+            KetQua f = new KetQua();
             f.Show();
         }
     }

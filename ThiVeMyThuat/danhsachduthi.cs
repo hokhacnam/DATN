@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ThiVeMyThuat
 {
-    public partial class danhsachduthi : Form
+    public partial class DanhSachDuThi : Form
     {
-        public danhsachduthi()
+        public DanhSachDuThi()
         {
             InitializeComponent();
             //Loaded += new RoutedEventHandler(MainPage_Loaded);

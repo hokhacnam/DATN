@@ -11,10 +11,10 @@ using System.Text.RegularExpressions;
 
 namespace ThiVeMyThuat
 {
-    public partial class Themthisinh : Form
+    public partial class ThemThiSinh : Form
     {
         String sohs;
-        public Themthisinh()
+        public ThemThiSinh()
         {
             InitializeComponent();
         }
@@ -34,7 +34,7 @@ namespace ThiVeMyThuat
                 eh(this, e);
         }
 
-        public Themthisinh(String sohs)
+        public ThemThiSinh(String sohs)
         {
             InitializeComponent();
             this.sohs = sohs;
@@ -193,7 +193,7 @@ namespace ThiVeMyThuat
 
                 TransferData(null);
                 this.Close();
-                Frmdangky fm = new Frmdangky();
+                FrmDangKy fm = new FrmDangKy();
                 fm.Show();
             }
             }

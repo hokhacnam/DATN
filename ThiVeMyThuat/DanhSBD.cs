@@ -187,7 +187,7 @@ namespace ThiVeMyThuat
 
         private void button2_Click(object sender, EventArgs e)
         {
-            danhsachsbd f = new danhsachsbd();
+            DanhSachSBD f = new DanhSachSBD();
             f.Show();
         }
     }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ThiVeMyThuat
 {
-    public partial class danhsachsbd : Form
+    public partial class DanhSachSBD : Form
     {
-        public danhsachsbd()
+        public DanhSachSBD()
         {
             InitializeComponent();
         }

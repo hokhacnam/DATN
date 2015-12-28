@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ThiVeMyThuat
 {
-    public partial class Ingiaybao : Form
+    public partial class InGiayBao : Form
     {
 
         //Định nghĩa delegate
@@ -18,20 +18,20 @@ namespace ThiVeMyThuat
 
         //khạ báo biến kiểu delegate
         public DelSendMsg SendMsg;
-        public Ingiaybao()
+        public InGiayBao()
         {
             InitializeComponent();
         }
 
         private void btnin_Click(object sender, EventArgs e)
         {
-            danhsachduthi re = new danhsachduthi();
+            DanhSachDuThi re = new DanhSachDuThi();
           
             if (SendMsg != null)
             {
                 SendMsg.Invoke(txtghichu.Text);
             }
-            danhsachduthi ds = new danhsachduthi();
+            DanhSachDuThi ds = new DanhSachDuThi();
             ds.Show();
         }
 

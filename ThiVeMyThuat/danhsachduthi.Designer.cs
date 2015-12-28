@@ -1,6 +1,6 @@
 ﻿namespace ThiVeMyThuat
 {
-    partial class danhsachduthi
+    partial class DanhSachDuThi
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(danhsachduthi));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DanhSachDuThi));
             PerpetuumSoft.Reporting.Export.ExtraParameters extraParameters1 = new PerpetuumSoft.Reporting.Export.ExtraParameters();
             this.reportManager1 = new PerpetuumSoft.Reporting.Components.ReportManager(this.components);
             this.dsVeMT1 = new ThiVeMyThuat.DsVeMT();
@@ -201,7 +201,7 @@
             this.dateTimePicker2.Size = new System.Drawing.Size(70, 20);
             this.dateTimePicker2.TabIndex = 36;
             // 
-            // danhsachduthi
+            // Danhsachduthi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -218,7 +218,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "danhsachduthi";
+            this.Name = "Danhsachduthi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "In giấy báo dự thi";
             this.Load += new System.EventHandler(this.danhsachduthi_Load);

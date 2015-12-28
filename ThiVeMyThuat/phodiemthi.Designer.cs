@@ -1,6 +1,6 @@
 ﻿namespace ThiVeMyThuat
 {
-    partial class phodiemthi
+    partial class PhoDiemThi
     {
         /// <summary>
         /// Required designer variable.

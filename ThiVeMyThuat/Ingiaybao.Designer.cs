@@ -1,6 +1,6 @@
 ﻿namespace ThiVeMyThuat
 {
-    partial class Ingiaybao
+    partial class InGiayBao
     {
         /// <summary>
         /// Required designer variable.

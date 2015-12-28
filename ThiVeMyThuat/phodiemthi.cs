@@ -11,9 +11,9 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace ThiVeMyThuat
 {
-    public partial class phodiemthi : Form
+    public partial class PhoDiemThi : Form
     {
-        public phodiemthi()
+        public PhoDiemThi()
         {
             InitializeComponent();
         }

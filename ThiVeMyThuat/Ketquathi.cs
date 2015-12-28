@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ThiVeMyThuat
 {
-    public partial class Ketquathi : Form
+    public partial class KetQuaThi : Form
     {
-        public Ketquathi()
+        public KetQuaThi()
         {
             InitializeComponent();
             inlineReportSlot1.RenderCompleted += new EventHandler(inlineReportSlot1_RenderCompleted);

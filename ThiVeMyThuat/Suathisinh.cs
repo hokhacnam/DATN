@@ -11,9 +11,9 @@ using System.Text.RegularExpressions;
 
 namespace ThiVeMyThuat
 {
-    public partial class Suathisinh : Form
+    public partial class SuaThiSinh : Form
     {
-        public Suathisinh()
+        public SuaThiSinh()
         {
             InitializeComponent();
         }
@@ -129,7 +129,7 @@ namespace ThiVeMyThuat
             else
                 return false;
         }
-        public Suathisinh(String sohs)
+        public SuaThiSinh(String sohs)
         {
             InitializeComponent();
             this.sohs1 = sohs;

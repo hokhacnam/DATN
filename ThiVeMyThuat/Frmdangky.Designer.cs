@@ -1,6 +1,6 @@
 ﻿namespace ThiVeMyThuat
 {
-    partial class Frmdangky
+    partial class FrmDangKy
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frmdangky));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDangKy));
             this.dgv_thisinh = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -115,12 +115,14 @@
             // btnthem
             // 
             this.btnthem.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnthem.BackgroundImage = global::ThiVeMyThuat.Properties.Resources._1450391755_Add_Male_User;
             this.btnthem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnthem.Image = global::ThiVeMyThuat.Properties.Resources._1450392485_delete;
+            this.btnthem.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.btnthem.Location = new System.Drawing.Point(654, 654);
             this.btnthem.Name = "btnthem";
             this.btnthem.Size = new System.Drawing.Size(143, 44);
             this.btnthem.TabIndex = 3;
+            this.btnthem.Text = "Thêm thí sinh";
             this.btnthem.UseVisualStyleBackColor = false;
             this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 

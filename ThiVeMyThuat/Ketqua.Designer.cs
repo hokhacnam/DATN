@@ -1,6 +1,6 @@
 ﻿namespace ThiVeMyThuat
 {
-    partial class Ketqua
+    partial class KetQua
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ketqua));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KetQua));
             this.reportManager1 = new PerpetuumSoft.Reporting.Components.ReportManager(this.components);
             this.dsVeMT1 = new ThiVeMyThuat.DsVeMT();
             this.inlineReportSlot1 = new PerpetuumSoft.Reporting.Components.InlineReportSlot(this.components);

@@ -1,6 +1,6 @@
 ﻿namespace ThiVeMyThuat
 {
-    partial class Suathisinh
+    partial class SuaThiSinh
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Suathisinh));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SuaThiSinh));
             this.btnthoat = new System.Windows.Forms.Button();
             this.chklephi = new System.Windows.Forms.CheckBox();
             this.label13 = new System.Windows.Forms.Label();

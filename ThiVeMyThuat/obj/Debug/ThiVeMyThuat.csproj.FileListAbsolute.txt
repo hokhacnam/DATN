@@ -75,3 +75,4 @@ F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\obj\Debug\ThiVeMyThuat.Ketq
 F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\obj\Debug\ThiVeMyThuat.Dangnhapserver.resources
 F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\bin\Debug\Newtonsoft.Json.dll
 F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\obj\Debug\ThiVeMyThuat.Dangnhap.resources
+F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\obj\Debug\ThiVeMyThuat.Taotaikhoan.resources

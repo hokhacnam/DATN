@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ThiVeMyThuat
 {
-    public partial class Ketqua : Form
+    public partial class KetQua : Form
     {
-        public Ketqua()
+        public KetQua()
         {
             InitializeComponent();
         }

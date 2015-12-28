@@ -176,7 +176,7 @@ namespace ThiVeMyThuat
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Indanhsachphongthi f = new Indanhsachphongthi();
+            InDanhSachPhongThi f = new InDanhSachPhongThi();
             f.Show();
         }
         }

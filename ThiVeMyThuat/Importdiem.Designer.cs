@@ -1,6 +1,6 @@
 ﻿namespace ThiVeMyThuat
 {
-    partial class Importdiem
+    partial class ImPortDiem
     {
         /// <summary>
         /// Required designer variable.

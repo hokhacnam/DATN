@@ -11,13 +11,18 @@ using System.Data.OleDb;
 
 namespace ThiVeMyThuat
 {
+    public delegate void SendMessage(String value);
     public partial class FrmMain : Form
-    {
+        {
         public FrmMain()
         {
             InitializeComponent();
         }
-
+        String taikhoan;
+        private void Setvalue(String value)
+        {
+            this.taikhoan = value;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             FrmDsAnh f = new FrmDsAnh();
@@ -44,7 +49,7 @@ namespace ThiVeMyThuat
 
         private void button5_Click(object sender, EventArgs e)
         {
-            danhsachduthi f = new danhsachduthi();
+            DanhSachDuThi f = new DanhSachDuThi();
             f.Show();
         }
 
@@ -86,13 +91,13 @@ namespace ThiVeMyThuat
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Frmdangky f = new Frmdangky();
+            FrmDangKy f = new FrmDangKy();
             f.Show();
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            Danhsachdutru f = new Danhsachdutru();
+            DanhSachDuTru f = new DanhSachDuTru();
             f.Show();
         }
 
@@ -156,13 +161,13 @@ namespace ThiVeMyThuat
                     MessageBox.Show("Lỗi! Import thất bại. Vui lòng kiểm tra lại file Excel.");
                 };
             }  
-            Importdiem f = new Importdiem();
+            ImPortDiem f = new ImPortDiem();
             f.Show();
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            phodiemthi f = new phodiemthi();
+            PhoDiemThi f = new PhoDiemThi();
             f.Show();
         }
 
@@ -206,7 +211,38 @@ namespace ThiVeMyThuat
             chuẩnBịToolStripMenuItem.Enabled = false;
             bắtĐầuToolStripMenuItem.Enabled = false;
             chấmThiVàKếQuảToolStripMenuItem.Enabled = false;
-            hệThốngToolStripMenuItem.Enabled = false;
+            tạoTàiKhoảnToolStripMenuItem.Enabled = false;
+            
+            var f = new DangNhap(Setvalue);
+            f.ShowDialog();
+            try
+            {
+                if (taikhoan.ToString() == "admin")
+                {
+                    chuẩnBịToolStripMenuItem.Enabled = true;
+                    bắtĐầuToolStripMenuItem.Enabled = true;
+                    chấmThiVàKếQuảToolStripMenuItem.Enabled = true;
+                    đăngNhậpToolStripMenuItem.Enabled = false;
+                    tạoTàiKhoảnToolStripMenuItem.Enabled = true;
+                }
+                else
+                {
+                    chuẩnBịToolStripMenuItem.Enabled = true;
+                    bắtĐầuToolStripMenuItem.Enabled = true;
+                    chấmThiVàKếQuảToolStripMenuItem.Enabled = true;
+                    đăngNhậpToolStripMenuItem.Enabled = false;
+                    tạoTàiKhoảnToolStripMenuItem.Enabled = false;
+                }
+            }
+            catch 
+            {
+                chuẩnBịToolStripMenuItem.Enabled = false;
+                bắtĐầuToolStripMenuItem.Enabled = false;
+                chấmThiVàKếQuảToolStripMenuItem.Enabled = false;
+                tạoTàiKhoảnToolStripMenuItem.Enabled = false;
+            }
+           
+           
         }
 
         private bool CheckExitsFrom(String name)
@@ -238,30 +274,30 @@ namespace ThiVeMyThuat
             // return check;
         }
 
-        private bool IsvalidUser(string userName, string password)
-        {
+        //private bool IsvalidUser(string userName, string password)
+        //{
 
-            dbVeMTDataContext context = new dbVeMTDataContext();
-            var q = from p in context.nhanviens
-                    where p.username == textBox1.Text
-                    && p.pass == textBox2.Text
-                    select p;
+        //    dbVeMTDataContext context = new dbVeMTDataContext();
+        //    var q = from p in context.nhanviens
+        //            where p.username == textBox1.Text
+        //            && p.pass == textBox2.Text
+        //            select p;
 
-            if (q.Any())
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
+        //    if (q.Any())
+        //    {
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        return false;
+        //    }
+        //}
 
         private void cậpNhậtThíSinhToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (!CheckExitsFrom("Frmdangky"))
             {
-                Frmdangky fm = new Frmdangky();
+                FrmDangKy fm = new FrmDangKy();
                 fm.MdiParent = this;
                 fm.Show();
 
@@ -297,7 +333,7 @@ namespace ThiVeMyThuat
         {
             if (!CheckExitsFrom("danhsachduthi"))
             {
-                danhsachduthi fm = new danhsachduthi();
+                DanhSachDuThi fm = new DanhSachDuThi();
                 fm.MdiParent = this;
                 fm.Show();
 
@@ -463,7 +499,7 @@ namespace ThiVeMyThuat
                     MessageBox.Show("Lỗi! Import thất bại. Vui lòng kiểm tra lại file Excel.");
                 };
             }
-            Importdiem f = new Importdiem();
+            ImPortDiem f = new ImPortDiem();
             f.Show();
         }
 
@@ -471,7 +507,7 @@ namespace ThiVeMyThuat
         {
             if (!CheckExitsFrom("phodiemthi"))
             {
-                phodiemthi fm = new phodiemthi();
+                PhoDiemThi fm = new PhoDiemThi();
                 fm.MdiParent = this;
                 fm.Show();
 
@@ -494,14 +530,15 @@ namespace ThiVeMyThuat
 
         private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!CheckExitsFrom("Dangnhap"))
-            {
-                Dangnhap fm = new Dangnhap();
-                fm.MdiParent = this;
-                fm.Show();
+            //if (!CheckExitsFrom("Dangnhap"))
+            //{
+                var f = new DangNhap(Setvalue);
+                f.ShowDialog();
+               // f.MdiParent = this;
+               
 
-            }
-            else ActiveChildForm("Dangnhap");
+            //}
+            //else ActiveChildForm("Dangnhap");
         }
 
         private void groupBox4_Enter(object sender, EventArgs e)
@@ -509,26 +546,60 @@ namespace ThiVeMyThuat
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            if (IsvalidUser(textBox1.Text, textBox2.Text))
-            {
-                MessageBox.Show("Đăng nhập thành công");
-                textBox1.Text = "";
-                textBox2.Text = "";
-                chuẩnBịToolStripMenuItem.Enabled = true;
-                bắtĐầuToolStripMenuItem.Enabled = true;
-                chấmThiVàKếQuảToolStripMenuItem.Enabled = true;
-                hệThốngToolStripMenuItem.Enabled = true;
-            }
-            else
-            {
-                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu");
-                textBox1.Text = "";
-                textBox2.Text = "";
-                textBox1.Focus();
+        //private void button1_Click_1(object sender, EventArgs e)
+        //{
+        //    if (IsvalidUser(textBox1.Text, textBox2.Text))
+        //    {
+        //        MessageBox.Show("Đăng nhập thành công");
+        //        //textBox1.Text = "";
+        //        //textBox2.Text = "";
+        //        chuẩnBịToolStripMenuItem.Enabled = true;
+        //        bắtĐầuToolStripMenuItem.Enabled = true;
+        //        chấmThiVàKếQuảToolStripMenuItem.Enabled = true;
                 
-            }
+        //        groupBox2.Hide();
+        //        if(textBox1.Text == "khacnam")
+        //        {
+        //            hệThốngToolStripMenuItem.Enabled = true;
+        //        }
+
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu");
+        //        textBox1.Text = "";
+        //        textBox2.Text = "";
+        //        textBox1.Focus();
+                
+        //    }
+
+            
+        //}
+
+        private void bắtĐầuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tạoTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TaoTaiKhoan f = new TaoTaiKhoan();
+            f.Show();
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void đánhSốBáoDanhToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            DanhSachSBD f = new DanhSachSBD();
+            f.Show();
+        }
+
+        private void chiaPhòngThiToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Chiaphongthi f = new Chiaphongthi();
         }
     }
 }
