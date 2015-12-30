@@ -715,6 +715,8 @@ namespace ThiVeMyThuat
 		
 		private string _pass;
 		
+		private string _tennguoidung;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -723,6 +725,8 @@ namespace ThiVeMyThuat
     partial void OnusernameChanged();
     partial void OnpassChanging(string value);
     partial void OnpassChanged();
+    partial void OntennguoidungChanging(string value);
+    partial void OntennguoidungChanged();
     #endregion
 		
 		public nhanvien()
@@ -766,6 +770,26 @@ namespace ThiVeMyThuat
 					this._pass = value;
 					this.SendPropertyChanged("pass");
 					this.OnpassChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tennguoidung", DbType="NChar(50)")]
+		public string tennguoidung
+		{
+			get
+			{
+				return this._tennguoidung;
+			}
+			set
+			{
+				if ((this._tennguoidung != value))
+				{
+					this.OntennguoidungChanging(value);
+					this.SendPropertyChanging();
+					this._tennguoidung = value;
+					this.SendPropertyChanged("tennguoidung");
+					this.OntennguoidungChanged();
 				}
 			}
 		}

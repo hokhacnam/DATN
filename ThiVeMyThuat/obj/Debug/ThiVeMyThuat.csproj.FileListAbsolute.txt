@@ -76,3 +76,5 @@ F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\obj\Debug\ThiVeMyThuat.Dang
 F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\bin\Debug\Newtonsoft.Json.dll
 F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\obj\Debug\ThiVeMyThuat.Dangnhap.resources
 F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\obj\Debug\ThiVeMyThuat.Taotaikhoan.resources
+F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\obj\Debug\ThiVeMyThuat.FrmQuanLyDangNhap.resources
+F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\obj\Debug\ThiVeMyThuat.SuaTaiKhoan.resources

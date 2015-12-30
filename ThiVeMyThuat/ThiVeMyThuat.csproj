@@ -226,6 +226,12 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmQuanLyDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuanLyDangNhap.Designer.cs">
+      <DependentUpon>FrmQuanLyDangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="ImPortDiem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,6 +278,12 @@
     <Compile Include="SuaThiSinh.Designer.cs">
       <DependentUpon>SuaThiSinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="SuaTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaTaiKhoan.Designer.cs">
+      <DependentUpon>SuaTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="TaoTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -306,6 +318,9 @@
     <EmbeddedResource Include="DanhSBD.resx">
       <DependentUpon>DanhSBD.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmQuanLyDangNhap.resx">
+      <DependentUpon>FrmQuanLyDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ImPortDiem.resx">
       <DependentUpon>ImPortDiem.cs</DependentUpon>
     </EmbeddedResource>
@@ -326,6 +341,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SuaThiSinh.resx">
       <DependentUpon>SuaThiSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuaTaiKhoan.resx">
+      <DependentUpon>SuaTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TaoTaiKhoan.resx">
       <DependentUpon>TaoTaiKhoan.cs</DependentUpon>

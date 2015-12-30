@@ -32,6 +32,7 @@
     <Type Name="nhanvien">
       <Column Name="username" Type="System.String" DbType="NVarChar(25) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="pass" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="tennguoidung" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
     </Type>
   </Table>
   <Function Name="dbo.layTen" Method="layTen" IsComposable="true">

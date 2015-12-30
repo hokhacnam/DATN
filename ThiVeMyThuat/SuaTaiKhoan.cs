@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace ThiVeMyThuat
 {
-    public partial class TaoTaiKhoan : Form
+    public partial class SuaTaiKhoan : Form
     {
-        public TaoTaiKhoan(String user)
+        public SuaTaiKhoan()
         {
            InitializeComponent();
-            this.user = user;
+           // this.user = user;
         }
         private string user;
 
@@ -67,17 +67,18 @@ namespace ThiVeMyThuat
                                 try
                                 {
                                     dbVeMTDataContext db = new dbVeMTDataContext();
-                                    //var p = from t in db.nhanviens
-                                            //where t.username =db;
+                                    var ts = (from p in db.nhanviens
+                                              where p.username == textBox1.Text
+                                              select p).Single();
+                                    
 
-                                    nhanvien n = new nhanvien();
-                                    n.tennguoidung = textBox4.Text;
-                                    n.username = textBox1.Text;
-                                    n.pass = textBox2.Text;
-                                    db.nhanviens.InsertOnSubmit(n);
+                                    
+                                    Tennd = textBox4.Text;
+                                    username = textBox1.Text;
+                                    pass = textBox2.Text;
+                                    
                                     db.SubmitChanges();
-                                    MessageBox.Show("Tạo tài khoản thành công");
-                                    this.Close();
+                                    MessageBox.Show("Sửa tài khoản thành công");
                                 }
                                 catch 
                                 {
@@ -85,19 +86,8 @@ namespace ThiVeMyThuat
                                     MessageBox.Show("Không thể tạo tài khoản");
                                 }
                             }
-            foreach (var item in Application.OpenForms)
-            {
-                Form f = (Form)item;
-                if (f.Name == "FrmQuanLyDangNhap")
-                {
-                    FrmQuanLyDangNhap f1 = (FrmQuanLyDangNhap)f;
-                    
-                    f1.load_datagridview();
-                }
-                
-            }
             TransferData(null);
-          
+            this.Close();
             
         }
 
@@ -120,9 +110,12 @@ namespace ThiVeMyThuat
             this.Close();
         }
 
-        private void TaoTaiKhoan_Load(object sender, EventArgs e)
+        private void SuaTaiKhoan_Load(object sender, EventArgs e)
         {
-
+            textBox4.Text = Tennd;
+            textBox1.Text = username;
+            textBox2.Text = pass;
+            textBox3.Text = pass;
         }
 
     }

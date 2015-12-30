@@ -95,6 +95,44 @@ namespace ThiVeMyThuat
             //    else { dgv_thisinh.CurrentRow.Cells[2].Value = "nữ"; }
         }
 
+        public void load_datagridview()
+        {
+            dbVeMTDataContext db = new dbVeMTDataContext();
+            dgv_thisinh.Rows.Clear();
+            var list = from t in db.vemts orderby t.sohs select new { t.sohs, t.hoten, Type = t.phai == true ? "Nam" : "Nữ", t.ngaysinh, t.noisinh, t.cmnd, t.ngcapcmt, t.noicap, t.hktt, t.phone, t.phonecodinh, t.email, t.namtn, Type1 = t.lephi == true ? "Đã nộp" : "Chưa nộp" };
+            
+
+
+
+            dgv_thisinh.Columns[0].HeaderText = "Số HS";
+            dgv_thisinh.Columns[1].HeaderText = "Họ và tên";
+            dgv_thisinh.Columns[2].HeaderText = "Giới tính";
+            dgv_thisinh.Columns[3].HeaderText = "Ngày sinh";
+            dgv_thisinh.Columns[4].HeaderText = "Nơi Sinh";
+            dgv_thisinh.Columns[5].HeaderText = "Số CMND";
+            dgv_thisinh.Columns[6].HeaderText = "Ngày cấp CMND";
+            dgv_thisinh.Columns[7].HeaderText = "Nơi cấp CMND";
+            dgv_thisinh.Columns[8].HeaderText = "Hộ khẩu thường trú";
+            dgv_thisinh.Columns[9].HeaderText = "Số điện thoại";
+            dgv_thisinh.Columns[10].HeaderText = "Điện thoại cố định";
+            dgv_thisinh.Columns[11].HeaderText = "Email";
+            dgv_thisinh.Columns[12].HeaderText = "Năm tốt nghiệp";
+            dgv_thisinh.Columns[13].HeaderText = "Lệ phí";
+
+
+            for (int i = 0; i < dgv_thisinh.Rows.Count; i++)
+            {
+                dgv_thisinh.Rows[i].HeaderCell.Value = (i + 1).ToString();
+
+            }
+            this.dgv_thisinh.Columns[3].DefaultCellStyle.Format = ("dd/MM/yyyy");
+            this.dgv_thisinh.Columns[6].DefaultCellStyle.Format = ("dd/MM/yyyy");
+            //dgv_thisinh.DataSource = null;
+            dgv_thisinh.DataSource = list;
+            dgv_thisinh.Refresh();
+        }
+
+
         private void Frmdangky_Load(object sender, EventArgs e)
         {
           

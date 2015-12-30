@@ -193,14 +193,26 @@ namespace ThiVeMyThuat
 
                 TransferData(null);
                 this.Close();
-                FrmDangKy fm = new FrmDangKy();
-                fm.Show();
+                //FrmDangKy fm = new FrmDangKy();
+                //fm.Show();
             }
             }
             catch (Exception)
             {
 
                 MessageBox.Show("Trùng Số hồ sơ");
+            }
+
+            foreach (var i in Application.OpenForms)
+            {
+                Form f = (Form)i;
+                if (f.Name == "FrmDangKy")
+                {
+                    FrmDangKy f1 = (FrmDangKy)f;
+                    
+                    f1.load_datagridview();
+                }
+
             }
 
         }

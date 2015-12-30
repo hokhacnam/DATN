@@ -583,8 +583,9 @@ namespace ThiVeMyThuat
 
         private void tạoTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TaoTaiKhoan f = new TaoTaiKhoan();
+            FrmQuanLyDangNhap f = new FrmQuanLyDangNhap();
             f.Show();
+         
         }
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)

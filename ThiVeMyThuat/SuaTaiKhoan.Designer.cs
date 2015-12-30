@@ -1,6 +1,6 @@
 ﻿namespace ThiVeMyThuat
 {
-    partial class TaoTaiKhoan
+    partial class SuaTaiKhoan
     {
         /// <summary>
         /// Required designer variable.
@@ -174,7 +174,7 @@
             this.Name = "TaoTaiKhoan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Taotaikhoan";
-            this.Load += new System.EventHandler(this.TaoTaiKhoan_Load);
+            this.Load += new System.EventHandler(this.SuaTaiKhoan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

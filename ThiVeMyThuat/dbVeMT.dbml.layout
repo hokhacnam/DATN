@@ -8,10 +8,10 @@
         <elementListCompartment Id="172c57cb-bed7-46d0-a8cc-38797fe84ae4" absoluteBounds="5.015, 1.585, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="04494a34-1c59-47c1-ab8c-b371065d26a4" absoluteBounds="7.25, 1.375, 2, 1.1939925130208333">
+    <classShape Id="0401dc89-cfe7-4091-b83e-4a212e95387c" absoluteBounds="7.75, 1.25, 2, 1.3862939453125">
       <DataClassMoniker Name="/dbVeMTDataContext/nhanvien" />
       <nestedChildShapes>
-        <elementListCompartment Id="af252d42-298e-4e9e-97dc-56a40323a27c" absoluteBounds="7.2650000000000006, 1.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="bdfcb584-0e82-468c-9891-98e2b44094c6" absoluteBounds="7.765, 1.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>
