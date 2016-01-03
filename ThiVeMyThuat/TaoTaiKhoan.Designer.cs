@@ -47,9 +47,9 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(98, 143);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(105, 17);
+            this.checkBox1.Size = new System.Drawing.Size(109, 17);
             this.checkBox1.TabIndex = 31;
-            this.checkBox1.Text = "Show PassWord";
+            this.checkBox1.Text = "Hiện thị mật khẩu";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -173,7 +173,7 @@
             this.Controls.Add(this.label1);
             this.Name = "TaoTaiKhoan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Taotaikhoan";
+            this.Text = "Thêm người dùng";
             this.Load += new System.EventHandler(this.TaoTaiKhoan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

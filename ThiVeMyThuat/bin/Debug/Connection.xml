@@ -1,1 +1,7 @@
-﻿
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <server>(local)</server>
+  <database>XDA</database>
+  <username></username>
+  <password></password>
+</config>

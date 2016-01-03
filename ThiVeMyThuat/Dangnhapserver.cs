@@ -171,6 +171,7 @@ namespace ThiVeMyThuat
                 LogExceptionToFile(ex);
             }
         }
+       
 
         private static bool CheckConn(SqlConnection conn)
         {
@@ -237,5 +238,16 @@ namespace ThiVeMyThuat
         //{
         //    this.Close();
         //}
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            switch (keyData)
+            {
+                case (Keys.Escape):
+                    Close();
+                    break;
+            }
+
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
     }
 }

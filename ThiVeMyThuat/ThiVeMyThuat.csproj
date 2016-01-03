@@ -103,6 +103,7 @@
     <Compile Include="Chiaphongthi.Designer.cs">
       <DependentUpon>Chiaphongthi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Connect.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
@@ -144,6 +145,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dbVeMT.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiMatKhau.Designer.cs">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmDangKy.cs">
       <SubType>Form</SubType>
@@ -296,6 +303,7 @@
     <Compile Include="ThemThiSinh.Designer.cs">
       <DependentUpon>ThemThiSinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateData.cs" />
     <Compile Include="Utils.cs" />
     <EmbeddedResource Include="Chiaphongthi.resx">
       <DependentUpon>Chiaphongthi.cs</DependentUpon>
@@ -317,6 +325,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DanhSBD.resx">
       <DependentUpon>DanhSBD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoiMatKhau.resx">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmQuanLyDangNhap.resx">
       <DependentUpon>FrmQuanLyDangNhap.cs</DependentUpon>

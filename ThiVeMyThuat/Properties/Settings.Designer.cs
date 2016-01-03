@@ -22,43 +22,51 @@ namespace ThiVeMyThuat.Properties {
                 return defaultInstance;
             }
         }
-        
+
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=THAONHI-PC\\SQL2014;Initial Catalog=XDA;Integrated Security=True")]
-        public string XDAConnectionString2 {
-            get {
+        public string XDAConnectionString2
+        {
+            get
+            {
                 return ((string)(this["XDAConnectionString2"]));
             }
         }
-        
+
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=TSDHXD-PC\\SQLEXPRESS;Initial Catalog=XDA;Integrated Security=True")]
-        public string XDAConnectionString {
-            get {
+        public string XDAConnectionString
+        {
+            get
+            {
                 return ((string)(this["XDAConnectionString"]));
             }
         }
-        
+
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(local);Initial Catalog=XDA;Integrated Security=True")]
-        public string XDAConnectionString1 {
-            get {
+        public string XDAConnectionString1
+        {
+            get
+            {
                 return ((string)(this["XDAConnectionString1"]));
             }
         }
-        
+
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=KHACNAM;Initial Catalog=XDA;Integrated Security=True")]
-        public string XDAConnectionString3 {
-            get {
+        public string XDAConnectionString3
+        {
+            get
+            {
                 return ((string)(this["XDAConnectionString3"]));
             }
         }

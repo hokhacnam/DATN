@@ -47,9 +47,9 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(98, 143);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(105, 17);
+            this.checkBox1.Size = new System.Drawing.Size(109, 17);
             this.checkBox1.TabIndex = 31;
-            this.checkBox1.Text = "Show PassWord";
+            this.checkBox1.Text = "Hiển thị mật khẩu";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -133,9 +133,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label1.Location = new System.Drawing.Point(117, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 24);
+            this.label1.Size = new System.Drawing.Size(151, 24);
             this.label1.TabIndex = 22;
-            this.label1.Text = "Tạo Tài Khoản";
+            this.label1.Text = "Sửa Tài Khoản";
             // 
             // textBox4
             // 
@@ -154,7 +154,7 @@
             this.label5.TabIndex = 33;
             this.label5.Text = "Tên Người dùng:";
             // 
-            // TaoTaiKhoan
+            // SuaTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -171,9 +171,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "TaoTaiKhoan";
+            this.Name = "SuaTaiKhoan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Taotaikhoan";
+            this.Text = "Cập Nhật Người Dùng";
             this.Load += new System.EventHandler(this.SuaTaiKhoan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

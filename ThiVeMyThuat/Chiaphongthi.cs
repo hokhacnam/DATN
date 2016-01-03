@@ -82,7 +82,7 @@ namespace ThiVeMyThuat
                 //}
 
                 dbVeMTDataContext db = new dbVeMTDataContext();
-                var qry1 = db.vemts.OrderBy(a => a.hoten);
+                var qry1 = db.vemts.OrderBy(a => db.layTen(a.hoten));
                 List<vemt> list1 = new List<vemt>();
                 list1 = qry1.ToList();
                 //danh stt
@@ -97,10 +97,10 @@ namespace ThiVeMyThuat
                               select (s.hoten);
 
 
-                    List<String> list = new List<String>();
+                List<String> list = new List<String>();
+                list = qry.ToList();
 
-
-                    foreach (String item in qry)
+                    foreach (String item in list)
                     {
                         List<vemt> dsSbd = new List<vemt>();
                         List<vemt> dsSbd1 = new List<vemt>();

@@ -12,8 +12,11 @@ using System.Data.OleDb;
 namespace ThiVeMyThuat
 {
     public delegate void SendMessage(String value);
+    public delegate void SendMessage1(String value);
+
     public partial class FrmMain : Form
         {
+            
         public FrmMain()
         {
             InitializeComponent();
@@ -22,6 +25,12 @@ namespace ThiVeMyThuat
         private void Setvalue(String value)
         {
             this.taikhoan = value;
+        }
+
+        String matkhau;
+        private void Setvalue1(String value)
+        {
+            this.matkhau = value;
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -213,7 +222,7 @@ namespace ThiVeMyThuat
             chấmThiVàKếQuảToolStripMenuItem.Enabled = false;
             tạoTàiKhoảnToolStripMenuItem.Enabled = false;
             
-            var f = new DangNhap(Setvalue);
+            var f = new DangNhap(Setvalue,Setvalue1);
             f.ShowDialog();
             try
             {
@@ -532,7 +541,7 @@ namespace ThiVeMyThuat
         {
             //if (!CheckExitsFrom("Dangnhap"))
             //{
-                var f = new DangNhap(Setvalue);
+                var f = new DangNhap(Setvalue, Setvalue1);
                 f.ShowDialog();
                // f.MdiParent = this;
                
@@ -583,24 +592,70 @@ namespace ThiVeMyThuat
 
         private void tạoTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmQuanLyDangNhap f = new FrmQuanLyDangNhap();
-            f.Show();
+            if (!CheckExitsFrom("FrmQuanLyDangNhap"))
+            {
+                FrmQuanLyDangNhap fm = new FrmQuanLyDangNhap();
+                fm.MdiParent = this;
+                fm.Show();
+
+            }
+            else ActiveChildForm("FrmQuanLyDangNhap");
+          
          
         }
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+            if (!CheckExitsFrom("DoiMatKhau"))
+            {
+             
+                var fm = new DoiMatKhau(taikhoan,matkhau);
+                fm.MdiParent = this;
+                fm.Show();
+
+            }
+            else ActiveChildForm("DoiMatKhau");
         }
 
         private void đánhSốBáoDanhToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            DanhSachSBD f = new DanhSachSBD();
-            f.Show();
+
+            if (!CheckExitsFrom("DanhSachSBD"))
+            {
+                DanhSachSBD fm = new DanhSachSBD();
+                fm.MdiParent = this;
+                fm.Show();
+
+            }
+            else ActiveChildForm("DanhSachSBD");
+            
         }
 
         private void chiaPhòngThiToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Chiaphongthi f = new Chiaphongthi();
+            if (!CheckExitsFrom("Chiaphongthi"))
+            {
+                Chiaphongthi fm = new Chiaphongthi();
+                fm.MdiParent = this;
+                fm.Show();
+
+            }
+            else ActiveChildForm("Chiaphongthi");
+            
+            
+        }
+
+        private void cậpNhậtHồSơĐăngKýDựThiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!CheckExitsFrom("FrmDangKy"))
+            {
+                FrmDangKy fm = new FrmDangKy();
+                fm.MdiParent = this;
+                fm.Show();
+
+            }
+            else ActiveChildForm("FrmDangKy");
         }
     }
 }

@@ -116,6 +116,7 @@ namespace ThiVeMyThuat
             textBox1.Text = username;
             textBox2.Text = pass;
             textBox3.Text = pass;
+            textBox4.Focus();
         }
 
     }

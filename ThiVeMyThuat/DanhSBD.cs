@@ -50,14 +50,18 @@ namespace ThiVeMyThuat
                 int rn = 1;
                 dbVeMTDataContext db = new dbVeMTDataContext();
                 //db.layTen();
-                var sort = from s in db.vemts
-                           orderby db.layTen(s.hoten)
-                           select (s.hoten);
+                //var sort = from s in db.vemts
+                //           orderby db.layTen(s.hoten)
+                //           select s.hoten;
+                var qry1 = db.vemts.OrderBy(a => db.layTen(a.hoten)).Select(b => b.hoten);
+                List<String> list1 = new List<String>();
+                list1 = qry1.ToList();
+              //  var qry = db.vemts.OrderBy(a => db.layTen(a.phongthi));
                 //private ArrayList al = new ArrayList();
                 List<String> ds = new List<String>();
-                ds = sort.ToList();
+              //  ds = sort.ToList();
                 // MessageBox.Show(ds.ToString());
-                foreach (String item in sort)
+                foreach (String item in list1)
                 {
                     List<vemt> dsSbd = new List<vemt>();
                     List<vemt> dsSbd1 = new List<vemt>();
@@ -92,11 +96,24 @@ namespace ThiVeMyThuat
                             rn = rn + 1;
                         }
                     }
+                    else if (dsSbd1.Count() < 1000)
+                    {
+                        for (int i = 0; i < dsSbd.Count(); i++)
+                        {
+                            //string s = i.ToString().PadLeft(2, '0') +rn.ToString();
+                            string s = rn.ToString().PadLeft(3, '0');
+                            dsSbd[i].sobaodanh = textBox1.Text + s;//so phach la tang lien tuc
+                           // MessageBox.Show(dsSbd[i].sobaodanh.ToString());
+                            rn = rn + 1;
+                        }
+                        
+                       
+                    }
                     else
                     {
                         for (int i = 0; i < dsSbd.Count(); i++)
                         {
-                            string s = rn.ToString().PadLeft(3, '0');
+                            string s = rn.ToString().PadLeft(4, '0');
 
                             dsSbd[i].sobaodanh = textBox1.Text + s;//so phach la tang lien tuc
                             // MessageBox.Show(dsSbd[i].phach.ToString());
@@ -107,6 +124,7 @@ namespace ThiVeMyThuat
                 }
 
                 db.SubmitChanges();
+
                 MessageBox.Show("Đã thực hiện xong");
 
                // loadgrv();

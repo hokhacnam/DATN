@@ -1,7 +1,9 @@
-﻿using System;
+﻿using DocumentFormat.OpenXml.Spreadsheet;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
@@ -9,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 
 
@@ -19,6 +22,7 @@ namespace ThiVeMyThuat
       //  public delegate void CustomHandler(object sender, bool checkState, Taikhoan hs);
         //public event CustomHandler CheckDangNhap;
         public SendMessage send;
+        public SendMessage1 send1;
         public class Taikhoan
         {
            // public virtual int ID { get; set; }
@@ -36,10 +40,11 @@ namespace ThiVeMyThuat
             InitializeComponent();
            
         }
-        public DangNhap( SendMessage sender)
+        public DangNhap( SendMessage sender, SendMessage1 sender1)
         {
             InitializeComponent();
             this.send = sender;
+            this.send1 = sender1;
 
         }
         //private void button1_Click(object sender, EventArgs e)
@@ -170,24 +175,57 @@ namespace ThiVeMyThuat
         private void label3_Click(object sender, EventArgs e)
         {
         }
-        private bool IsvalidUser(string userName, string password)
-        {
+      
+        //private bool IsvalidUser(string userName, string password)
+        //{
 
-            dbVeMTDataContext context = new dbVeMTDataContext();
-            var q = from p in context.nhanviens
-                    where p.username == txtTaiKhoan.Text
-                    && p.pass == txtMatKhau.Text
-                    select p;
+            
+        //    try
+        //    {
+        //      var xElem = XDocument.Load("Connection.xml");
+        //    // string connetionString = null;
+        //    //SqlConnection cnn ;
+        //    //connetionString = "Data Source=ServerName;Initial Catalog=DatabaseName;User ID=UserName;Password=Password";
+        //    //cnn = new SqlConnection(connetionString);
+        //    //try
+        //    //{
+        //    //    cnn.Open();
+        //    //    MessageBox.Show ("Connection Open ! ");
+        //    //    cnn.Close();
+        //    //}
+        //    //catch (Exception ex)
+        //    //{
+        //    //    MessageBox.Show("Can not open connection ! ");
+        //    //}
+         
+        //        dbVeMTDataContext context = new dbVeMTDataContext();
+               
+        //        var q = (from p in xElem.Root.Descendants("nhanvien")
+        //                where p.Attribute("username").Value.ToString() == txtTaiKhoan.Text
+        //                && p.Attribute("pass").Value.ToString() == txtMatKhau.Text.ToMD5()
+        //                select p);
 
-            if (q.Any())
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
+        //        var lv1s = from lv1 in xElem.Descendants("config")
+        //         select lv1.Attribute("server").Value;
+        //       MessageBox.Show(lv1s.ToString());
+        //        if (q.Any())
+        //        {
+        //            return true;
+        //        }
+        //        else
+        //        {
+        //            return false;
+        //        }
+        //    }
+        //    catch 
+        //    {
+                
+        //        MessageBox.Show("Sai người dùng hoặc mật khẩu");
+        //        return false;
+        //    }
+
+         
+        //}
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -209,21 +247,21 @@ namespace ThiVeMyThuat
             {
                 try
                 {
-                    if (IsvalidUser(txtTaiKhoan.Text, txtMatKhau.Text))
-                    {
-                        MessageBox.Show("Đăng nhập thành công");
+                   // if (IsvalidUser(txtTaiKhoan.Text, txtMatKhau.Text))
+                   // {
+                        Dangnhap();
+                        //MessageBox.Show("Đăng nhập thành công");
                         //textBox1.Text = "";
                         //textBox2.Text = "";
                         
-                        this.send(this.txtTaiKhoan.Text);
-                        this.Close();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu");
+                     
+                    //}
+                    //else
+                    //{
+                    //    MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu");
 
 
-                    }
+                    //}
                 }
                 catch (Exception ex)
                 {
@@ -233,32 +271,60 @@ namespace ThiVeMyThuat
          
             }
         }
+        private static readonly Connect Conn = new Connect();
+
+        public static DataTable KiemTraTaiKhoan(string user, string pass)
+        {
+            var tb = new DataTable();
+            try
+            {
+                var str1 = "SELECT * FROM nhanvien WHERE username = N'" + user + "' and pass = N'" + pass + "'";
+                tb = Conn.GetTable(str1);
+            }
+            catch (Exception ex)
+            {
+                LogExceptionToFile(ex);
+            }
+            return tb;
+        }
+
+        public delegate void CustomHandler(object sender, bool checkState, Taikhoan hs);
+
+       // public event CustomHandler CheckDangNhap;
 
         private void Dangnhap()
         {
             try
             {
-                if (IsvalidUser(txtTaiKhoan.Text, txtMatKhau.Text))
+                var tb = KiemTraTaiKhoan(txtTaiKhoan.Text, MaHoaMD5.Md5(txtMatKhau.Text));
+                if (tb.Rows.Count > 0)
                 {
-                    MessageBox.Show("Đăng nhập thành công");
-                    //textBox1.Text = "";
-                    //textBox2.Text = "";
-
-
+                    var taikhoan = new Taikhoan
+                    {
+                        
+                        TaiKhoan = tb.Rows[0]["username"].ToString(),
+                        MatKhau = tb.Rows[0]["pass"].ToString()
+                        
+                    };
+                   // CheckDangNhap(this, true, taikhoan);
+                    this.send(this.txtTaiKhoan.Text);
+                    this.send1(this.txtMatKhau.Text);
+                    this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu");
-
-
+                    MessageBox.Show("Bạn đã nhập sai tên đăng nhập hoặc mật khẩu hoặc sai cấu hình server. Xin vui lòng thử lại", @"Thông báo");
+                    txtMatKhau.Clear();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-
-                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu");
+                MessageBox.Show("Không kết nối được tới CSDL");
+              LogExceptionToFile(ex);
             }
-         
         }
+
+
+   
     }
 }

@@ -16,7 +16,7 @@ namespace ThiVeMyThuat
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmDangKy());
+            Application.Run(new FrmMain());
         }
     }
 }
