@@ -23,7 +23,7 @@ namespace ThiVeMyThuat
         {
             try
             {
-                Conn.ExcuteQuerySql("Update nhanvien set username = N'" + matkhau + "' where pass = N'" + taikhoan +
+                Conn.ExcuteQuerySql("Update nhanvien set username = N'" + taikhoan + "' where pass = N'" + matkhau +
                                     "'");
             }
             catch (Exception ex)

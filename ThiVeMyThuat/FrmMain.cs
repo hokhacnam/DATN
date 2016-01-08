@@ -610,7 +610,7 @@ namespace ThiVeMyThuat
             if (!CheckExitsFrom("DoiMatKhau"))
             {
              
-                var fm = new DoiMatKhau(taikhoan,matkhau);
+                var fm = new DoiMatKhau();
                 fm.MdiParent = this;
                 fm.Show();
 

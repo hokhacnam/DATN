@@ -251,12 +251,6 @@
     <Compile Include="InDanhSachPhongThi.Designer.cs">
       <DependentUpon>InDanhSachPhongThi.cs</DependentUpon>
     </Compile>
-    <Compile Include="InGiayBao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InGiayBao.Designer.cs">
-      <DependentUpon>InGiayBao.cs</DependentUpon>
-    </Compile>
     <Compile Include="KetQua.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -337,9 +331,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InDanhSachPhongThi.resx">
       <DependentUpon>InDanhSachPhongThi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InGiayBao.resx">
-      <DependentUpon>InGiayBao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KetQua.resx">
       <DependentUpon>KetQua.cs</DependentUpon>

@@ -12,6 +12,7 @@ using System.IO;
 using System.Xml;
 using System.Diagnostics;
 using System.Xml.Linq;
+using System.Configuration;
 
 namespace ThiVeMyThuat
 {
@@ -151,25 +152,85 @@ namespace ThiVeMyThuat
             }
         }
 
+        public void updateConfigFile(string con)
+        {
+            //updating config file
+            XmlDocument XmlDoc = new XmlDocument();
+            //Loading the Config file
+            XmlDoc.Load(AppDomain.CurrentDomain.SetupInformation.ConfigurationFile);
+            foreach (XmlElement xElement in XmlDoc.DocumentElement)
+            {
+                if (xElement.Name == "connectionStrings")
+                {
+                    //setting the coonection string
+                    xElement.FirstChild.Attributes[2].Value = con;
+                }
+            }
+            //writing the connection string in config file
+            XmlDoc.Save(AppDomain.CurrentDomain.SetupInformation.ConfigurationFile);
+        }
+
         private void btnTest_Click(object sender, EventArgs e)
         {
             try
             {
                 string conString;
-                if (string.IsNullOrEmpty(txtusername.Text) || string.IsNullOrEmpty(txtpassword.Text))
-                    conString = @"Data Source = " + txtserver.Text + ";Initial Catalog = " + txtdatabase.Text + ";Integrated Security=SSPI";
-                else
-                    conString = @"Data Source=" + txtserver.Text + ";Initial Catalog=" + txtdatabase.Text + ";User Id=" + txtusername.Text + ";Password=" + txtpassword.Text + "";
-                var conn = new SqlConnection(conString);
-                if (CheckConn(conn))
-                    MessageBox.Show(@"Kết nối CSDL thành công.", @"Thông báo");
-                else
-                    MessageBox.Show(@"Không thể kết nối CSDL.", @"Thông báo");
+                   if (string.IsNullOrEmpty(txtusername.Text) || string.IsNullOrEmpty(txtpassword.Text))
+                      conString = @"Data Source = " + txtserver.Text + ";Initial Catalog = " + txtdatabase.Text + ";Integrated Security=SSPI";
+                  else
+                      conString = @"Data Source=" + txtserver.Text + ";Initial Catalog=" + txtdatabase.Text + ";User Id=" + txtusername.Text + ";Password=" + txtpassword.Text + "";
+                   var conn = new SqlConnection(conString);
+                    if (CheckConn(conn))
+                    {
+                        StringBuilder Con = new StringBuilder("Data Source=");
+                        Con.Append(txtusername.Text);
+                        Con.Append(";Initial Catalog=");
+                        Con.Append(txtdatabase.Text);
+                        Con.Append(";Integrated Security=SSPI;");
+                        string strCon = Con.ToString();
+                        updateConfigFile(strCon);
+                        //Create new sql connection
+                        SqlConnection Db = new SqlConnection();
+                        //to refresh connection string each time else it will use             previous connection string
+                        ConfigurationManager.RefreshSection("connectionStrings");
+                        Db.ConnectionString = ConfigurationManager.ConnectionStrings["ThiVeMyThuat.Properties.Settings.XDAConnectionString"].ToString();
+                        MessageBox.Show(@"Kết nối CSDL thành công.", @"Thông báo");
+                    }
+                         
+                       else
+                           MessageBox.Show(@"Không thể kết nối CSDL.", @"Thông báo");
+                
+                //Constructing connection string from the inputs
+               
+                //To check new connection string is working or not. Please use the existing table otherwise it will give error
+                //SqlDataAdapter da = new SqlDataAdapter("select * from teams", Db);
+                //DataTable dt = new DataTable();
+                //da.Fill(dt);
+                //cmbTestValue.DataSource = dt;
+                //cmbTestValue.DisplayMember = "Team";
+              //  MessageBox.Show(@"Kết nối CSDL thành công.", @"Thông báo");
             }
-            catch (Exception ex)
+            catch 
             {
-                LogExceptionToFile(ex);
+                MessageBox.Show(ConfigurationManager.ConnectionStrings["ThiVeMyThuat.Properties.Settings.XDAConnectionString"].ToString() + ".This is invalid connection", "Incorrect server/Database");
             }
+            //try
+            //{
+            //    string conString;
+            //    if (string.IsNullOrEmpty(txtusername.Text) || string.IsNullOrEmpty(txtpassword.Text))
+            //        conString = @"Data Source = " + txtserver.Text + ";Initial Catalog = " + txtdatabase.Text + ";Integrated Security=SSPI";
+            //    else
+            //        conString = @"Data Source=" + txtserver.Text + ";Initial Catalog=" + txtdatabase.Text + ";User Id=" + txtusername.Text + ";Password=" + txtpassword.Text + "";
+            //    var conn = new SqlConnection(conString);
+            //    if (CheckConn(conn))
+            //        MessageBox.Show(@"Kết nối CSDL thành công.", @"Thông báo");
+            //    else
+            //        MessageBox.Show(@"Không thể kết nối CSDL.", @"Thông báo");
+            //}
+            //catch (Exception ex)
+            //{
+            //    LogExceptionToFile(ex);
+            //}
         }
        
 

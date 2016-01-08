@@ -70,22 +70,38 @@ namespace ThiVeMyThuat
                                     var ts = (from p in db.nhanviens
                                               where p.username == textBox1.Text
                                               select p).Single();
-                                    
 
+                                    ts.tennguoidung = textBox4.Text;
+                                    ts.username = textBox1.Text;
+                                    ts.pass = textBox3.Text;
                                     
                                     Tennd = textBox4.Text;
                                     username = textBox1.Text;
-                                    pass = textBox2.Text;
+                                    pass = textBox2.Text.ToMD5() ;
                                     
                                     db.SubmitChanges();
+
+                                    //UpdateData.UpdateMatKhau(textBox4.Text, MaHoaMD5.Md5(textBox2.Text));
+                                    //CheckUpdate = true;
                                     MessageBox.Show("Sửa tài khoản thành công");
                                 }
                                 catch 
                                 {
 
-                                    MessageBox.Show("Không thể tạo tài khoản");
+                                    MessageBox.Show("Không thể Sửa tài khoản");
                                 }
                             }
+            foreach (var item in Application.OpenForms)
+            {
+                Form f = (Form)item;
+                if (f.Name == "FrmQuanLyDangNhap")
+                {
+                    FrmQuanLyDangNhap f1 = (FrmQuanLyDangNhap)f;
+
+                    f1.load_datagridview();
+                }
+
+            }
             TransferData(null);
             this.Close();
             

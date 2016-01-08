@@ -50,7 +50,6 @@ F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\obj\Debug\ThiVeMyThuat.Frmd
 F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\obj\Debug\ThiVeMyThuat.Themthisinh.resources
 F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\obj\Debug\ThiVeMyThuat.Suathisinh.resources
 F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\obj\Debug\ThiVeMyThuat.danhsachduthi.resources
-F:\doantotnghiep\New folder\VeMT-master\ThiVeMyThuat\obj\Debug\ThiVeMyThuat.Ingiaybao.resources
 F:\New folder\VeMT-master\ThiVeMyThuat\bin\Debug\ThiVeMyThuat.exe.config
 F:\New folder\VeMT-master\ThiVeMyThuat\obj\Debug\ThiVeMyThuat.exe
 F:\New folder\VeMT-master\ThiVeMyThuat\obj\Debug\ThiVeMyThuat.pdb

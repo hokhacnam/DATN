@@ -74,8 +74,10 @@
             // 
             // pdfExportFilter1
             // 
+            this.pdfExportFilter1.ChangePermissionsPassword = null;
             this.pdfExportFilter1.Compress = true;
             this.pdfExportFilter1.ExtraParameters = extraParameters1;
+            this.pdfExportFilter1.UserPassword = null;
             // 
             // FrmInHDDanhPhach
             // 

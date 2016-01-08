@@ -35,6 +35,7 @@ namespace ThiVeMyThuat
 
            // public virtual string Quyen { get; set; }
         }
+     
         public DangNhap()
         {
             InitializeComponent();
@@ -82,7 +83,7 @@ namespace ThiVeMyThuat
         //        return false;
         //    }
         //}
-
+       
         private void Dangnhap_Load(object sender, EventArgs e)
         {
         }
@@ -226,7 +227,7 @@ namespace ThiVeMyThuat
 
          
         //}
-
+  
         private void button1_Click(object sender, EventArgs e)
         {
 
